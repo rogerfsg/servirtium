@@ -203,7 +203,7 @@ public class JettyServirtiumServer extends ServirtiumServer {
 
         Object clientRequestBody = null;
 
-        if (is.available() > 0) {
+        //if (is.available() > 0) {
 
             if (isText(clientRequestContentType)) {
                 clientRequestBody = null;
@@ -212,17 +212,19 @@ public class JettyServirtiumServer extends ServirtiumServer {
                     characterEncoding = "utf-8";
                 }
                 try (Scanner scanner = new Scanner(is, characterEncoding)) {
-                    clientRequestBody = scanner.useDelimiter("\\A").next();
+                    if(scanner.hasNext()) {
+                        clientRequestBody = scanner.useDelimiter("\\A").next();
+                    }
                 }
                 if (shouldHavePrettyPrintedTextBodies() && clientRequestBody != null) {
                     clientRequestBody = prettifyDocOrNot((String) clientRequestBody);
                 }
-            } else {
+            } else if(is.available() > 0){
                 byte[] targetArray = new byte[is.available()];
                 is.read(targetArray);
                 clientRequestBody = targetArray;
             }
-        }
+        //}
 
         while (hdrs.hasMoreElements()) {
             // TODO - make this cater for multiple lines with the same name

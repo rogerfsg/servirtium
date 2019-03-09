@@ -14148,3 +14148,3972 @@ Via: 1.1 vegur
 }
 ```
 
+## Interaction 0: OPTIONS /
+
+### Request headers sent to the real server:
+
+```
+Accept-Encoding: gzip, deflate, br
+Accept-Language: pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7
+Accept: */*
+Access-Control-Request-Headers: content-type
+Access-Control-Request-Method: GET
+Cache-Control: no-cache
+Connection: keep-alive
+Host: todo-javalin.herokuapp.com
+Origin: http://www.todobackend.com
+Pragma: no-cache
+Referer: http://www.todobackend.com/specs/index.html?http://todo-javalin.herokuapp.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36
+```
+
+### Body sent to the real server ():
+
+```
+
+```
+
+### Resulting headers back from the real server:
+
+```
+Access-Control-Allow-Headers: content-type
+Access-Control-Allow-Methods: GET
+Access-Control-Allow-Origin: http://www.todobackend.com
+Connection: keep-alive
+Content-Length: 0
+Content-Type: text/plain;charset=utf-8
+Date: Sat, 09 Mar 2019 21:42:38 GMT
+Server: Javalin
+Via: 1.1 vegur
+```
+
+### Resulting body back from the real server (200: text/plain;charset=utf-8):
+
+```
+
+```
+
+## Interaction 1: GET /
+
+### Request headers sent to the real server:
+
+```
+Accept-Encoding: gzip, deflate, br
+Accept-Language: pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7
+Accept: text/plain, */*; q=0.01
+Cache-Control: no-cache
+Connection: keep-alive
+Content-Type: application/json
+Host: todo-javalin.herokuapp.com
+Origin: http://www.todobackend.com
+Pragma: no-cache
+Referer: http://www.todobackend.com/specs/index.html?http://todo-javalin.herokuapp.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36
+```
+
+### Body sent to the real server (application/json):
+
+```
+
+```
+
+### Resulting headers back from the real server:
+
+```
+Access-Control-Allow-Origin: http://www.todobackend.com
+Connection: keep-alive
+Content-Length: 875
+Content-Type: application/json
+Date: Sat, 09 Mar 2019 21:42:48 GMT
+Server: Javalin
+Via: 1.1 vegur
+```
+
+### Resulting body back from the real server (200: application/json):
+
+```
+[
+   {
+      "id": "c6595e4a-e239-40b8-9dc1-0a954cda760d",
+      "title": "blah",
+      "completed": false,
+      "url": "https://todo-javalin.herokuapp.com/c6595e4a-e239-40b8-9dc1-0a954cda760d",
+      "order": -1
+   },
+   {
+      "id": "d4289d9a-8e5c-4062-a73c-f08612add3f7",
+      "title": "blah",
+      "completed": false,
+      "url": "https://todo-javalin.herokuapp.com/d4289d9a-8e5c-4062-a73c-f08612add3f7",
+      "order": 523
+   },
+   {
+      "id": "f6b70a75-9ac5-4f90-a0de-6f5eef4d172f",
+      "title": "blah",
+      "completed": false,
+      "url": "https://todo-javalin.herokuapp.com/f6b70a75-9ac5-4f90-a0de-6f5eef4d172f",
+      "order": 10
+   },
+   {
+      "id": "a1e9c5e0-c22b-4443-b16f-cb5e9a4140ac",
+      "title": "blah",
+      "completed": false,
+      "url": "https://todo-javalin.herokuapp.com/a1e9c5e0-c22b-4443-b16f-cb5e9a4140ac",
+      "order": 10
+   }
+]
+```
+
+## Interaction 2: OPTIONS /
+
+### Request headers sent to the real server:
+
+```
+Accept-Encoding: gzip, deflate, br
+Accept-Language: pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7
+Accept: */*
+Access-Control-Request-Headers: content-type
+Access-Control-Request-Method: POST
+Cache-Control: no-cache
+Connection: keep-alive
+Host: todo-javalin.herokuapp.com
+Origin: http://www.todobackend.com
+Pragma: no-cache
+Referer: http://www.todobackend.com/specs/index.html?http://todo-javalin.herokuapp.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36
+```
+
+### Body sent to the real server ():
+
+```
+
+```
+
+### Resulting headers back from the real server:
+
+```
+Access-Control-Allow-Headers: content-type
+Access-Control-Allow-Methods: POST
+Access-Control-Allow-Origin: http://www.todobackend.com
+Connection: keep-alive
+Content-Length: 0
+Content-Type: text/plain;charset=utf-8
+Date: Sat, 09 Mar 2019 21:42:58 GMT
+Server: Javalin
+Via: 1.1 vegur
+```
+
+### Resulting body back from the real server (200: text/plain;charset=utf-8):
+
+```
+
+```
+
+# Failure noted during recording.
+
+Meaning this recording may be shorter than intended. That all depends on how the test was coded though.
+## Interaction 5: OPTIONS /
+
+### Request headers sent to the real server:
+
+```
+Accept-Encoding: gzip, deflate, br
+Accept-Language: pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7
+Accept: */*
+Access-Control-Request-Headers: content-type
+Access-Control-Request-Method: DELETE
+Cache-Control: no-cache
+Connection: keep-alive
+Host: todo-javalin.herokuapp.com
+Origin: http://www.todobackend.com
+Pragma: no-cache
+Referer: http://www.todobackend.com/specs/index.html?http://todo-javalin.herokuapp.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36
+```
+
+### Body sent to the real server ():
+
+```
+
+```
+
+### Resulting headers back from the real server:
+
+```
+Access-Control-Allow-Headers: content-type
+Access-Control-Allow-Methods: DELETE
+Access-Control-Allow-Origin: http://www.todobackend.com
+Connection: keep-alive
+Content-Length: 0
+Content-Type: text/plain;charset=utf-8
+Date: Sat, 09 Mar 2019 21:46:21 GMT
+Server: Javalin
+Via: 1.1 vegur
+```
+
+### Resulting body back from the real server (200: text/plain;charset=utf-8):
+
+```
+
+```
+
+# Failure noted during recording.
+
+Meaning this recording may be shorter than intended. That all depends on how the test was coded though.
+## Interaction 6: OPTIONS /
+
+### Request headers sent to the real server:
+
+```
+Accept-Encoding: gzip, deflate, br
+Accept-Language: pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7
+Accept: */*
+Access-Control-Request-Headers: content-type
+Access-Control-Request-Method: DELETE
+Cache-Control: no-cache
+Connection: keep-alive
+Host: todo-javalin.herokuapp.com
+Origin: http://www.todobackend.com
+Pragma: no-cache
+Referer: http://www.todobackend.com/specs/index.html?http://todo-javalin.herokuapp.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36
+```
+
+### Body sent to the real server ():
+
+```
+
+```
+
+### Resulting headers back from the real server:
+
+```
+Access-Control-Allow-Headers: content-type
+Access-Control-Allow-Methods: DELETE
+Access-Control-Allow-Origin: http://www.todobackend.com
+Connection: keep-alive
+Content-Length: 0
+Content-Type: text/plain;charset=utf-8
+Date: Sat, 09 Mar 2019 21:46:22 GMT
+Server: Javalin
+Via: 1.1 vegur
+```
+
+### Resulting body back from the real server (200: text/plain;charset=utf-8):
+
+```
+
+```
+
+# Failure noted during recording.
+
+Meaning this recording may be shorter than intended. That all depends on how the test was coded though.
+## Interaction 7: OPTIONS /
+
+### Request headers sent to the real server:
+
+```
+Accept-Encoding: gzip, deflate, br
+Accept-Language: pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7
+Accept: */*
+Access-Control-Request-Headers: content-type
+Access-Control-Request-Method: DELETE
+Cache-Control: no-cache
+Connection: keep-alive
+Host: todo-javalin.herokuapp.com
+Origin: http://www.todobackend.com
+Pragma: no-cache
+Referer: http://www.todobackend.com/specs/index.html?http://todo-javalin.herokuapp.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36
+```
+
+### Body sent to the real server ():
+
+```
+
+```
+
+### Resulting headers back from the real server:
+
+```
+Access-Control-Allow-Headers: content-type
+Access-Control-Allow-Methods: DELETE
+Access-Control-Allow-Origin: http://www.todobackend.com
+Connection: keep-alive
+Content-Length: 0
+Content-Type: text/plain;charset=utf-8
+Date: Sat, 09 Mar 2019 21:46:22 GMT
+Server: Javalin
+Via: 1.1 vegur
+```
+
+### Resulting body back from the real server (200: text/plain;charset=utf-8):
+
+```
+
+```
+
+# Failure noted during recording.
+
+Meaning this recording may be shorter than intended. That all depends on how the test was coded though.
+# Failure noted during recording.
+
+Meaning this recording may be shorter than intended. That all depends on how the test was coded though.
+## Interaction 9: OPTIONS /
+
+### Request headers sent to the real server:
+
+```
+Accept-Encoding: gzip, deflate, br
+Accept-Language: pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7
+Accept: */*
+Access-Control-Request-Headers: content-type
+Access-Control-Request-Method: POST
+Cache-Control: no-cache
+Connection: keep-alive
+Host: todo-javalin.herokuapp.com
+Origin: http://www.todobackend.com
+Pragma: no-cache
+Referer: http://www.todobackend.com/specs/index.html?http://todo-javalin.herokuapp.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36
+```
+
+### Body sent to the real server ():
+
+```
+
+```
+
+### Resulting headers back from the real server:
+
+```
+Access-Control-Allow-Headers: content-type
+Access-Control-Allow-Methods: POST
+Access-Control-Allow-Origin: http://www.todobackend.com
+Connection: keep-alive
+Content-Length: 0
+Content-Type: text/plain;charset=utf-8
+Date: Sat, 09 Mar 2019 21:47:24 GMT
+Server: Javalin
+Via: 1.1 vegur
+```
+
+### Resulting body back from the real server (200: text/plain;charset=utf-8):
+
+```
+
+```
+
+# Failure noted during recording.
+
+Meaning this recording may be shorter than intended. That all depends on how the test was coded though.
+## Interaction 4: POST /
+
+### Request headers sent to the real server:
+
+```
+Accept-Encoding: gzip, deflate, br
+Accept-Language: pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7
+Accept: text/plain, */*; q=0.01
+Cache-Control: no-cache
+Connection: keep-alive
+Content-Length: 18
+Content-Type: application/json
+Host: todo-javalin.herokuapp.com
+Origin: http://www.todobackend.com
+Pragma: no-cache
+Referer: http://www.todobackend.com/specs/index.html?http://todo-javalin.herokuapp.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36
+```
+
+### Body sent to the real server (application/json):
+
+```
+{
+   "title": "a todo"
+}
+```
+
+### Resulting headers back from the real server:
+
+```
+Access-Control-Allow-Origin: http://www.todobackend.com
+Connection: keep-alive
+Content-Length: 197
+Content-Type: application/json
+Date: Sat, 09 Mar 2019 21:47:24 GMT
+Server: Javalin
+Via: 1.1 vegur
+```
+
+### Resulting body back from the real server (200: application/json):
+
+```
+{
+   "id": "b414748b-90d8-407a-b604-ff6ee86388e6",
+   "title": "a todo",
+   "completed": false,
+   "url": "https://todo-javalin.herokuapp.com/b414748b-90d8-407a-b604-ff6ee86388e6",
+   "order": -1
+}
+```
+
+## Interaction 10: OPTIONS /
+
+### Request headers sent to the real server:
+
+```
+Accept-Encoding: gzip, deflate, br
+Accept-Language: pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7
+Accept: */*
+Access-Control-Request-Headers: content-type
+Access-Control-Request-Method: POST
+Cache-Control: no-cache
+Connection: keep-alive
+Host: todo-javalin.herokuapp.com
+Origin: http://www.todobackend.com
+Pragma: no-cache
+Referer: http://www.todobackend.com/specs/index.html?http://todo-javalin.herokuapp.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36
+```
+
+### Body sent to the real server ():
+
+```
+
+```
+
+### Resulting headers back from the real server:
+
+```
+Access-Control-Allow-Headers: content-type
+Access-Control-Allow-Methods: POST
+Access-Control-Allow-Origin: http://www.todobackend.com
+Connection: keep-alive
+Content-Length: 0
+Content-Type: text/plain;charset=utf-8
+Date: Sat, 09 Mar 2019 21:47:24 GMT
+Server: Javalin
+Via: 1.1 vegur
+```
+
+### Resulting body back from the real server (200: text/plain;charset=utf-8):
+
+```
+
+```
+
+## Interaction 11: OPTIONS /
+
+### Request headers sent to the real server:
+
+```
+Accept-Encoding: gzip, deflate, br
+Accept-Language: pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7
+Accept: */*
+Access-Control-Request-Headers: content-type
+Access-Control-Request-Method: DELETE
+Cache-Control: no-cache
+Connection: keep-alive
+Host: todo-javalin.herokuapp.com
+Origin: http://www.todobackend.com
+Pragma: no-cache
+Referer: http://www.todobackend.com/specs/index.html?http://todo-javalin.herokuapp.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36
+```
+
+### Body sent to the real server ():
+
+```
+
+```
+
+### Resulting headers back from the real server:
+
+```
+Access-Control-Allow-Headers: content-type
+Access-Control-Allow-Methods: DELETE
+Access-Control-Allow-Origin: http://www.todobackend.com
+Connection: keep-alive
+Content-Length: 0
+Content-Type: text/plain;charset=utf-8
+Date: Sat, 09 Mar 2019 21:47:25 GMT
+Server: Javalin
+Via: 1.1 vegur
+```
+
+### Resulting body back from the real server (200: text/plain;charset=utf-8):
+
+```
+
+```
+
+## Interaction 12: OPTIONS /
+
+### Request headers sent to the real server:
+
+```
+Accept-Encoding: gzip, deflate, br
+Accept-Language: pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7
+Accept: */*
+Access-Control-Request-Headers: content-type
+Access-Control-Request-Method: POST
+Cache-Control: no-cache
+Connection: keep-alive
+Host: todo-javalin.herokuapp.com
+Origin: http://www.todobackend.com
+Pragma: no-cache
+Referer: http://www.todobackend.com/specs/index.html?http://todo-javalin.herokuapp.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36
+```
+
+### Body sent to the real server ():
+
+```
+
+```
+
+### Resulting headers back from the real server:
+
+```
+Access-Control-Allow-Headers: content-type
+Access-Control-Allow-Methods: POST
+Access-Control-Allow-Origin: http://www.todobackend.com
+Connection: keep-alive
+Content-Length: 0
+Content-Type: text/plain;charset=utf-8
+Date: Sat, 09 Mar 2019 21:47:25 GMT
+Server: Javalin
+Via: 1.1 vegur
+```
+
+### Resulting body back from the real server (200: text/plain;charset=utf-8):
+
+```
+
+```
+
+# Failure noted during recording.
+
+Meaning this recording may be shorter than intended. That all depends on how the test was coded though.
+# Failure noted during recording.
+
+Meaning this recording may be shorter than intended. That all depends on how the test was coded though.
+# Failure noted during recording.
+
+Meaning this recording may be shorter than intended. That all depends on how the test was coded though.
+# Failure noted during recording.
+
+Meaning this recording may be shorter than intended. That all depends on how the test was coded though.
+## Interaction 0: OPTIONS /
+
+### Request headers sent to the real server:
+
+```
+Accept-Encoding: gzip, deflate, br
+Accept-Language: pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7
+Accept: */*
+Access-Control-Request-Headers: content-type
+Access-Control-Request-Method: GET
+Cache-Control: no-cache
+Connection: keep-alive
+Host: todo-javalin.herokuapp.com
+Origin: http://www.todobackend.com
+Pragma: no-cache
+Referer: http://www.todobackend.com/specs/index.html?http://todo-javalin.herokuapp.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36
+```
+
+### Body sent to the real server ():
+
+```
+
+```
+
+### Resulting headers back from the real server:
+
+```
+Access-Control-Allow-Headers: content-type
+Access-Control-Allow-Methods: GET
+Access-Control-Allow-Origin: http://www.todobackend.com
+Connection: keep-alive
+Content-Length: 0
+Content-Type: text/plain;charset=utf-8
+Date: Sat, 09 Mar 2019 21:51:28 GMT
+Server: Javalin
+Via: 1.1 vegur
+```
+
+### Resulting body back from the real server (200: text/plain;charset=utf-8):
+
+```
+
+```
+
+## Interaction 1: GET /
+
+### Request headers sent to the real server:
+
+```
+Accept-Encoding: gzip, deflate, br
+Accept-Language: pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7
+Accept: text/plain, */*; q=0.01
+Cache-Control: no-cache
+Connection: keep-alive
+Content-Type: application/json
+Host: todo-javalin.herokuapp.com
+Origin: http://www.todobackend.com
+Pragma: no-cache
+Referer: http://www.todobackend.com/specs/index.html?http://todo-javalin.herokuapp.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36
+```
+
+### Body sent to the real server (application/json):
+
+```
+
+```
+
+### Resulting headers back from the real server:
+
+```
+Access-Control-Allow-Origin: http://www.todobackend.com
+Connection: keep-alive
+Content-Length: 1095
+Content-Type: application/json
+Date: Sat, 09 Mar 2019 21:51:29 GMT
+Server: Javalin
+Via: 1.1 vegur
+```
+
+### Resulting body back from the real server (200: application/json):
+
+```
+[
+   {
+      "id": "c6595e4a-e239-40b8-9dc1-0a954cda760d",
+      "title": "blah",
+      "completed": false,
+      "url": "https://todo-javalin.herokuapp.com/c6595e4a-e239-40b8-9dc1-0a954cda760d",
+      "order": -1
+   },
+   {
+      "id": "d4289d9a-8e5c-4062-a73c-f08612add3f7",
+      "title": "blah",
+      "completed": false,
+      "url": "https://todo-javalin.herokuapp.com/d4289d9a-8e5c-4062-a73c-f08612add3f7",
+      "order": 523
+   },
+   {
+      "id": "f6b70a75-9ac5-4f90-a0de-6f5eef4d172f",
+      "title": "blah",
+      "completed": false,
+      "url": "https://todo-javalin.herokuapp.com/f6b70a75-9ac5-4f90-a0de-6f5eef4d172f",
+      "order": 10
+   },
+   {
+      "id": "a1e9c5e0-c22b-4443-b16f-cb5e9a4140ac",
+      "title": "blah",
+      "completed": false,
+      "url": "https://todo-javalin.herokuapp.com/a1e9c5e0-c22b-4443-b16f-cb5e9a4140ac",
+      "order": 10
+   },
+   {
+      "id": "b414748b-90d8-407a-b604-ff6ee86388e6",
+      "title": "a todo",
+      "completed": false,
+      "url": "https://todo-javalin.herokuapp.com/b414748b-90d8-407a-b604-ff6ee86388e6",
+      "order": -1
+   }
+]
+```
+
+## Interaction 2: POST /
+
+### Request headers sent to the real server:
+
+```
+Accept-Encoding: gzip, deflate, br
+Accept-Language: pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7
+Accept: text/plain, */*; q=0.01
+Cache-Control: no-cache
+Connection: keep-alive
+Content-Length: 18
+Content-Type: application/json
+Host: todo-javalin.herokuapp.com
+Origin: http://www.todobackend.com
+Pragma: no-cache
+Referer: http://www.todobackend.com/specs/index.html?http://todo-javalin.herokuapp.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36
+```
+
+### Body sent to the real server (application/json):
+
+```
+{
+   "title": "a todo"
+}
+```
+
+### Resulting headers back from the real server:
+
+```
+Access-Control-Allow-Origin: http://www.todobackend.com
+Connection: keep-alive
+Content-Length: 197
+Content-Type: application/json
+Date: Sat, 09 Mar 2019 21:51:29 GMT
+Server: Javalin
+Via: 1.1 vegur
+```
+
+### Resulting body back from the real server (200: application/json):
+
+```
+{
+   "id": "c441c974-bb87-40d2-83c6-a21a965f29ba",
+   "title": "a todo",
+   "completed": false,
+   "url": "https://todo-javalin.herokuapp.com/c441c974-bb87-40d2-83c6-a21a965f29ba",
+   "order": -1
+}
+```
+
+## Interaction 3: OPTIONS /
+
+### Request headers sent to the real server:
+
+```
+Accept-Encoding: gzip, deflate, br
+Accept-Language: pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7
+Accept: */*
+Access-Control-Request-Headers: content-type
+Access-Control-Request-Method: DELETE
+Cache-Control: no-cache
+Connection: keep-alive
+Host: todo-javalin.herokuapp.com
+Origin: http://www.todobackend.com
+Pragma: no-cache
+Referer: http://www.todobackend.com/specs/index.html?http://todo-javalin.herokuapp.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36
+```
+
+### Body sent to the real server ():
+
+```
+
+```
+
+### Resulting headers back from the real server:
+
+```
+Access-Control-Allow-Headers: content-type
+Access-Control-Allow-Methods: DELETE
+Access-Control-Allow-Origin: http://www.todobackend.com
+Connection: keep-alive
+Content-Length: 0
+Content-Type: text/plain;charset=utf-8
+Date: Sat, 09 Mar 2019 21:51:29 GMT
+Server: Javalin
+Via: 1.1 vegur
+```
+
+### Resulting body back from the real server (200: text/plain;charset=utf-8):
+
+```
+
+```
+
+## Interaction 4: DELETE /
+
+### Request headers sent to the real server:
+
+```
+Accept-Encoding: gzip, deflate, br
+Accept-Language: pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7
+Accept: text/plain, */*; q=0.01
+Cache-Control: no-cache
+Connection: keep-alive
+Content-Type: application/json
+Host: todo-javalin.herokuapp.com
+Origin: http://www.todobackend.com
+Pragma: no-cache
+Referer: http://www.todobackend.com/specs/index.html?http://todo-javalin.herokuapp.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36
+```
+
+### Body sent to the real server (application/json):
+
+```
+
+```
+
+### Resulting headers back from the real server:
+
+```
+Access-Control-Allow-Origin: http://www.todobackend.com
+Connection: keep-alive
+Content-Length: 3
+Content-Type: application/json
+Date: Sat, 09 Mar 2019 21:51:29 GMT
+Server: Javalin
+Via: 1.1 vegur
+```
+
+### Resulting body back from the real server (200: application/json):
+
+```
+[
+]
+```
+
+## Interaction 5: DELETE /
+
+### Request headers sent to the real server:
+
+```
+Accept-Encoding: gzip, deflate, br
+Accept-Language: pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7
+Accept: text/plain, */*; q=0.01
+Cache-Control: no-cache
+Connection: keep-alive
+Content-Type: application/json
+Host: todo-javalin.herokuapp.com
+Origin: http://www.todobackend.com
+Pragma: no-cache
+Referer: http://www.todobackend.com/specs/index.html?http://todo-javalin.herokuapp.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36
+```
+
+### Body sent to the real server (application/json):
+
+```
+
+```
+
+### Resulting headers back from the real server:
+
+```
+Access-Control-Allow-Origin: http://www.todobackend.com
+Connection: keep-alive
+Content-Length: 3
+Content-Type: application/json
+Date: Sat, 09 Mar 2019 21:51:30 GMT
+Server: Javalin
+Via: 1.1 vegur
+```
+
+### Resulting body back from the real server (200: application/json):
+
+```
+[
+]
+```
+
+## Interaction 6: GET /
+
+### Request headers sent to the real server:
+
+```
+Accept-Encoding: gzip, deflate, br
+Accept-Language: pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7
+Accept: text/plain, */*; q=0.01
+Cache-Control: no-cache
+Connection: keep-alive
+Content-Type: application/json
+Host: todo-javalin.herokuapp.com
+Origin: http://www.todobackend.com
+Pragma: no-cache
+Referer: http://www.todobackend.com/specs/index.html?http://todo-javalin.herokuapp.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36
+```
+
+### Body sent to the real server (application/json):
+
+```
+
+```
+
+### Resulting headers back from the real server:
+
+```
+Access-Control-Allow-Origin: http://www.todobackend.com
+Connection: keep-alive
+Content-Length: 3
+Content-Type: application/json
+Date: Sat, 09 Mar 2019 21:51:30 GMT
+Server: Javalin
+Via: 1.1 vegur
+```
+
+### Resulting body back from the real server (200: application/json):
+
+```
+[
+]
+```
+
+## Interaction 7: DELETE /
+
+### Request headers sent to the real server:
+
+```
+Accept-Encoding: gzip, deflate, br
+Accept-Language: pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7
+Accept: text/plain, */*; q=0.01
+Cache-Control: no-cache
+Connection: keep-alive
+Content-Type: application/json
+Host: todo-javalin.herokuapp.com
+Origin: http://www.todobackend.com
+Pragma: no-cache
+Referer: http://www.todobackend.com/specs/index.html?http://todo-javalin.herokuapp.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36
+```
+
+### Body sent to the real server (application/json):
+
+```
+
+```
+
+### Resulting headers back from the real server:
+
+```
+Access-Control-Allow-Origin: http://www.todobackend.com
+Connection: keep-alive
+Content-Length: 3
+Content-Type: application/json
+Date: Sat, 09 Mar 2019 21:51:30 GMT
+Server: Javalin
+Via: 1.1 vegur
+```
+
+### Resulting body back from the real server (200: application/json):
+
+```
+[
+]
+```
+
+## Interaction 8: POST /
+
+### Request headers sent to the real server:
+
+```
+Accept-Encoding: gzip, deflate, br
+Accept-Language: pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7
+Accept: text/plain, */*; q=0.01
+Cache-Control: no-cache
+Connection: keep-alive
+Content-Length: 24
+Content-Type: application/json
+Host: todo-javalin.herokuapp.com
+Origin: http://www.todobackend.com
+Pragma: no-cache
+Referer: http://www.todobackend.com/specs/index.html?http://todo-javalin.herokuapp.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36
+```
+
+### Body sent to the real server (application/json):
+
+```
+{
+   "title": "walk the dog"
+}
+```
+
+### Resulting headers back from the real server:
+
+```
+Access-Control-Allow-Origin: http://www.todobackend.com
+Connection: keep-alive
+Content-Length: 203
+Content-Type: application/json
+Date: Sat, 09 Mar 2019 21:51:30 GMT
+Server: Javalin
+Via: 1.1 vegur
+```
+
+### Resulting body back from the real server (200: application/json):
+
+```
+{
+   "id": "ef186214-d6ee-4e7a-bc6c-0c7764c3a485",
+   "title": "walk the dog",
+   "completed": false,
+   "url": "https://todo-javalin.herokuapp.com/ef186214-d6ee-4e7a-bc6c-0c7764c3a485",
+   "order": -1
+}
+```
+
+## Interaction 9: DELETE /
+
+### Request headers sent to the real server:
+
+```
+Accept-Encoding: gzip, deflate, br
+Accept-Language: pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7
+Accept: text/plain, */*; q=0.01
+Cache-Control: no-cache
+Connection: keep-alive
+Content-Type: application/json
+Host: todo-javalin.herokuapp.com
+Origin: http://www.todobackend.com
+Pragma: no-cache
+Referer: http://www.todobackend.com/specs/index.html?http://todo-javalin.herokuapp.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36
+```
+
+### Body sent to the real server (application/json):
+
+```
+
+```
+
+### Resulting headers back from the real server:
+
+```
+Access-Control-Allow-Origin: http://www.todobackend.com
+Connection: keep-alive
+Content-Length: 3
+Content-Type: application/json
+Date: Sat, 09 Mar 2019 21:51:30 GMT
+Server: Javalin
+Via: 1.1 vegur
+```
+
+### Resulting body back from the real server (200: application/json):
+
+```
+[
+]
+```
+
+## Interaction 10: POST /
+
+### Request headers sent to the real server:
+
+```
+Accept-Encoding: gzip, deflate, br
+Accept-Language: pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7
+Accept: text/plain, */*; q=0.01
+Cache-Control: no-cache
+Connection: keep-alive
+Content-Length: 16
+Content-Type: application/json
+Host: todo-javalin.herokuapp.com
+Origin: http://www.todobackend.com
+Pragma: no-cache
+Referer: http://www.todobackend.com/specs/index.html?http://todo-javalin.herokuapp.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36
+```
+
+### Body sent to the real server (application/json):
+
+```
+{
+   "title": "blah"
+}
+```
+
+### Resulting headers back from the real server:
+
+```
+Access-Control-Allow-Origin: http://www.todobackend.com
+Connection: keep-alive
+Content-Length: 195
+Content-Type: application/json
+Date: Sat, 09 Mar 2019 21:51:30 GMT
+Server: Javalin
+Via: 1.1 vegur
+```
+
+### Resulting body back from the real server (200: application/json):
+
+```
+{
+   "id": "e467039f-2a46-4811-b361-d5c878f6e067",
+   "title": "blah",
+   "completed": false,
+   "url": "https://todo-javalin.herokuapp.com/e467039f-2a46-4811-b361-d5c878f6e067",
+   "order": -1
+}
+```
+
+## Interaction 11: DELETE /
+
+### Request headers sent to the real server:
+
+```
+Accept-Encoding: gzip, deflate, br
+Accept-Language: pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7
+Accept: text/plain, */*; q=0.01
+Cache-Control: no-cache
+Connection: keep-alive
+Content-Type: application/json
+Host: todo-javalin.herokuapp.com
+Origin: http://www.todobackend.com
+Pragma: no-cache
+Referer: http://www.todobackend.com/specs/index.html?http://todo-javalin.herokuapp.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36
+```
+
+### Body sent to the real server (application/json):
+
+```
+
+```
+
+### Resulting headers back from the real server:
+
+```
+Access-Control-Allow-Origin: http://www.todobackend.com
+Connection: keep-alive
+Content-Length: 3
+Content-Type: application/json
+Date: Sat, 09 Mar 2019 21:51:31 GMT
+Server: Javalin
+Via: 1.1 vegur
+```
+
+### Resulting body back from the real server (200: application/json):
+
+```
+[
+]
+```
+
+## Interaction 12: POST /
+
+### Request headers sent to the real server:
+
+```
+Accept-Encoding: gzip, deflate, br
+Accept-Language: pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7
+Accept: text/plain, */*; q=0.01
+Cache-Control: no-cache
+Connection: keep-alive
+Content-Length: 16
+Content-Type: application/json
+Host: todo-javalin.herokuapp.com
+Origin: http://www.todobackend.com
+Pragma: no-cache
+Referer: http://www.todobackend.com/specs/index.html?http://todo-javalin.herokuapp.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36
+```
+
+### Body sent to the real server (application/json):
+
+```
+{
+   "title": "blah"
+}
+```
+
+### Resulting headers back from the real server:
+
+```
+Access-Control-Allow-Origin: http://www.todobackend.com
+Connection: keep-alive
+Content-Length: 195
+Content-Type: application/json
+Date: Sat, 09 Mar 2019 21:51:31 GMT
+Server: Javalin
+Via: 1.1 vegur
+```
+
+### Resulting body back from the real server (200: application/json):
+
+```
+{
+   "id": "c3b5df20-2c0e-4b7c-9447-09922c33fd33",
+   "title": "blah",
+   "completed": false,
+   "url": "https://todo-javalin.herokuapp.com/c3b5df20-2c0e-4b7c-9447-09922c33fd33",
+   "order": -1
+}
+```
+
+## Interaction 13: DELETE /
+
+### Request headers sent to the real server:
+
+```
+Accept-Encoding: gzip, deflate, br
+Accept-Language: pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7
+Accept: text/plain, */*; q=0.01
+Cache-Control: no-cache
+Connection: keep-alive
+Content-Type: application/json
+Host: todo-javalin.herokuapp.com
+Origin: http://www.todobackend.com
+Pragma: no-cache
+Referer: http://www.todobackend.com/specs/index.html?http://todo-javalin.herokuapp.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36
+```
+
+### Body sent to the real server (application/json):
+
+```
+
+```
+
+### Resulting headers back from the real server:
+
+```
+Access-Control-Allow-Origin: http://www.todobackend.com
+Connection: keep-alive
+Content-Length: 3
+Content-Type: application/json
+Date: Sat, 09 Mar 2019 21:51:31 GMT
+Server: Javalin
+Via: 1.1 vegur
+```
+
+### Resulting body back from the real server (200: application/json):
+
+```
+[
+]
+```
+
+## Interaction 14: POST /
+
+### Request headers sent to the real server:
+
+```
+Accept-Encoding: gzip, deflate, br
+Accept-Language: pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7
+Accept: text/plain, */*; q=0.01
+Cache-Control: no-cache
+Connection: keep-alive
+Content-Length: 19
+Content-Type: application/json
+Host: todo-javalin.herokuapp.com
+Origin: http://www.todobackend.com
+Pragma: no-cache
+Referer: http://www.todobackend.com/specs/index.html?http://todo-javalin.herokuapp.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36
+```
+
+### Body sent to the real server (application/json):
+
+```
+{
+   "title": "my todo"
+}
+```
+
+### Resulting headers back from the real server:
+
+```
+Access-Control-Allow-Origin: http://www.todobackend.com
+Connection: keep-alive
+Content-Length: 198
+Content-Type: application/json
+Date: Sat, 09 Mar 2019 21:51:31 GMT
+Server: Javalin
+Via: 1.1 vegur
+```
+
+### Resulting body back from the real server (200: application/json):
+
+```
+{
+   "id": "073407c7-4fc5-4993-b870-669f2d70b875",
+   "title": "my todo",
+   "completed": false,
+   "url": "https://todo-javalin.herokuapp.com/073407c7-4fc5-4993-b870-669f2d70b875",
+   "order": -1
+}
+```
+
+## Interaction 15: DELETE /
+
+### Request headers sent to the real server:
+
+```
+Accept-Encoding: gzip, deflate, br
+Accept-Language: pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7
+Accept: text/plain, */*; q=0.01
+Cache-Control: no-cache
+Connection: keep-alive
+Content-Type: application/json
+Host: todo-javalin.herokuapp.com
+Origin: http://www.todobackend.com
+Pragma: no-cache
+Referer: http://www.todobackend.com/specs/index.html?http://todo-javalin.herokuapp.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36
+```
+
+### Body sent to the real server (application/json):
+
+```
+
+```
+
+### Resulting headers back from the real server:
+
+```
+Access-Control-Allow-Origin: http://www.todobackend.com
+Connection: keep-alive
+Content-Length: 3
+Content-Type: application/json
+Date: Sat, 09 Mar 2019 21:51:31 GMT
+Server: Javalin
+Via: 1.1 vegur
+```
+
+### Resulting body back from the real server (200: application/json):
+
+```
+[
+]
+```
+
+## Interaction 16: POST /
+
+### Request headers sent to the real server:
+
+```
+Accept-Encoding: gzip, deflate, br
+Accept-Language: pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7
+Accept: text/plain, */*; q=0.01
+Cache-Control: no-cache
+Connection: keep-alive
+Content-Length: 27
+Content-Type: application/json
+Host: todo-javalin.herokuapp.com
+Origin: http://www.todobackend.com
+Pragma: no-cache
+Referer: http://www.todobackend.com/specs/index.html?http://todo-javalin.herokuapp.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36
+```
+
+### Body sent to the real server (application/json):
+
+```
+{
+   "title": "todo the second"
+}
+```
+
+### Resulting headers back from the real server:
+
+```
+Access-Control-Allow-Origin: http://www.todobackend.com
+Connection: keep-alive
+Content-Length: 206
+Content-Type: application/json
+Date: Sat, 09 Mar 2019 21:51:31 GMT
+Server: Javalin
+Via: 1.1 vegur
+```
+
+### Resulting body back from the real server (200: application/json):
+
+```
+{
+   "id": "aab2801d-0397-4d6d-9c7a-78c07616a1ec",
+   "title": "todo the second",
+   "completed": false,
+   "url": "https://todo-javalin.herokuapp.com/aab2801d-0397-4d6d-9c7a-78c07616a1ec",
+   "order": -1
+}
+```
+
+## Interaction 17: POST /
+
+### Request headers sent to the real server:
+
+```
+Accept-Encoding: gzip, deflate, br
+Accept-Language: pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7
+Accept: text/plain, */*; q=0.01
+Cache-Control: no-cache
+Connection: keep-alive
+Content-Length: 26
+Content-Type: application/json
+Host: todo-javalin.herokuapp.com
+Origin: http://www.todobackend.com
+Pragma: no-cache
+Referer: http://www.todobackend.com/specs/index.html?http://todo-javalin.herokuapp.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36
+```
+
+### Body sent to the real server (application/json):
+
+```
+{
+   "title": "todo the first"
+}
+```
+
+### Resulting headers back from the real server:
+
+```
+Access-Control-Allow-Origin: http://www.todobackend.com
+Connection: keep-alive
+Content-Length: 205
+Content-Type: application/json
+Date: Sat, 09 Mar 2019 21:51:32 GMT
+Server: Javalin
+Via: 1.1 vegur
+```
+
+### Resulting body back from the real server (200: application/json):
+
+```
+{
+   "id": "43d41565-eb33-4262-82ab-ee7321acbe4c",
+   "title": "todo the first",
+   "completed": false,
+   "url": "https://todo-javalin.herokuapp.com/43d41565-eb33-4262-82ab-ee7321acbe4c",
+   "order": -1
+}
+```
+
+## Interaction 18: DELETE /
+
+### Request headers sent to the real server:
+
+```
+Accept-Encoding: gzip, deflate, br
+Accept-Language: pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7
+Accept: text/plain, */*; q=0.01
+Cache-Control: no-cache
+Connection: keep-alive
+Content-Type: application/json
+Host: todo-javalin.herokuapp.com
+Origin: http://www.todobackend.com
+Pragma: no-cache
+Referer: http://www.todobackend.com/specs/index.html?http://todo-javalin.herokuapp.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36
+```
+
+### Body sent to the real server (application/json):
+
+```
+
+```
+
+### Resulting headers back from the real server:
+
+```
+Access-Control-Allow-Origin: http://www.todobackend.com
+Connection: keep-alive
+Content-Length: 3
+Content-Type: application/json
+Date: Sat, 09 Mar 2019 21:51:32 GMT
+Server: Javalin
+Via: 1.1 vegur
+```
+
+### Resulting body back from the real server (200: application/json):
+
+```
+[
+]
+```
+
+## Interaction 19: POST /
+
+### Request headers sent to the real server:
+
+```
+Accept-Encoding: gzip, deflate, br
+Accept-Language: pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7
+Accept: text/plain, */*; q=0.01
+Cache-Control: no-cache
+Connection: keep-alive
+Content-Length: 25
+Content-Type: application/json
+Host: todo-javalin.herokuapp.com
+Origin: http://www.todobackend.com
+Pragma: no-cache
+Referer: http://www.todobackend.com/specs/index.html?http://todo-javalin.herokuapp.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36
+```
+
+### Body sent to the real server (application/json):
+
+```
+{
+   "title": "initial title"
+}
+```
+
+### Resulting headers back from the real server:
+
+```
+Access-Control-Allow-Origin: http://www.todobackend.com
+Connection: keep-alive
+Content-Length: 204
+Content-Type: application/json
+Date: Sat, 09 Mar 2019 21:51:32 GMT
+Server: Javalin
+Via: 1.1 vegur
+```
+
+### Resulting body back from the real server (200: application/json):
+
+```
+{
+   "id": "2d3e42b4-87a4-4751-93cf-4ee388786438",
+   "title": "initial title",
+   "completed": false,
+   "url": "https://todo-javalin.herokuapp.com/2d3e42b4-87a4-4751-93cf-4ee388786438",
+   "order": -1
+}
+```
+
+## Interaction 20: DELETE /
+
+### Request headers sent to the real server:
+
+```
+Accept-Encoding: gzip, deflate, br
+Accept-Language: pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7
+Accept: text/plain, */*; q=0.01
+Cache-Control: no-cache
+Connection: keep-alive
+Content-Type: application/json
+Host: todo-javalin.herokuapp.com
+Origin: http://www.todobackend.com
+Pragma: no-cache
+Referer: http://www.todobackend.com/specs/index.html?http://todo-javalin.herokuapp.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36
+```
+
+### Body sent to the real server (application/json):
+
+```
+
+```
+
+### Resulting headers back from the real server:
+
+```
+Access-Control-Allow-Origin: http://www.todobackend.com
+Connection: keep-alive
+Content-Length: 3
+Content-Type: application/json
+Date: Sat, 09 Mar 2019 21:51:32 GMT
+Server: Javalin
+Via: 1.1 vegur
+```
+
+### Resulting body back from the real server (200: application/json):
+
+```
+[
+]
+```
+
+## Interaction 21: POST /
+
+### Request headers sent to the real server:
+
+```
+Accept-Encoding: gzip, deflate, br
+Accept-Language: pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7
+Accept: text/plain, */*; q=0.01
+Cache-Control: no-cache
+Connection: keep-alive
+Content-Length: 16
+Content-Type: application/json
+Host: todo-javalin.herokuapp.com
+Origin: http://www.todobackend.com
+Pragma: no-cache
+Referer: http://www.todobackend.com/specs/index.html?http://todo-javalin.herokuapp.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36
+```
+
+### Body sent to the real server (application/json):
+
+```
+{
+   "title": "blah"
+}
+```
+
+### Resulting headers back from the real server:
+
+```
+Access-Control-Allow-Origin: http://www.todobackend.com
+Connection: keep-alive
+Content-Length: 195
+Content-Type: application/json
+Date: Sat, 09 Mar 2019 21:51:32 GMT
+Server: Javalin
+Via: 1.1 vegur
+```
+
+### Resulting body back from the real server (200: application/json):
+
+```
+{
+   "id": "eb2c160a-ef42-43eb-872e-0a45c644a0d6",
+   "title": "blah",
+   "completed": false,
+   "url": "https://todo-javalin.herokuapp.com/eb2c160a-ef42-43eb-872e-0a45c644a0d6",
+   "order": -1
+}
+```
+
+## Interaction 22: DELETE /
+
+### Request headers sent to the real server:
+
+```
+Accept-Encoding: gzip, deflate, br
+Accept-Language: pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7
+Accept: text/plain, */*; q=0.01
+Cache-Control: no-cache
+Connection: keep-alive
+Content-Type: application/json
+Host: todo-javalin.herokuapp.com
+Origin: http://www.todobackend.com
+Pragma: no-cache
+Referer: http://www.todobackend.com/specs/index.html?http://todo-javalin.herokuapp.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36
+```
+
+### Body sent to the real server (application/json):
+
+```
+
+```
+
+### Resulting headers back from the real server:
+
+```
+Access-Control-Allow-Origin: http://www.todobackend.com
+Connection: keep-alive
+Content-Length: 3
+Content-Type: application/json
+Date: Sat, 09 Mar 2019 21:51:32 GMT
+Server: Javalin
+Via: 1.1 vegur
+```
+
+### Resulting body back from the real server (200: application/json):
+
+```
+[
+]
+```
+
+## Interaction 23: POST /
+
+### Request headers sent to the real server:
+
+```
+Accept-Encoding: gzip, deflate, br
+Accept-Language: pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7
+Accept: text/plain, */*; q=0.01
+Cache-Control: no-cache
+Connection: keep-alive
+Content-Length: 16
+Content-Type: application/json
+Host: todo-javalin.herokuapp.com
+Origin: http://www.todobackend.com
+Pragma: no-cache
+Referer: http://www.todobackend.com/specs/index.html?http://todo-javalin.herokuapp.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36
+```
+
+### Body sent to the real server (application/json):
+
+```
+{
+   "title": "blah"
+}
+```
+
+### Resulting headers back from the real server:
+
+```
+Access-Control-Allow-Origin: http://www.todobackend.com
+Connection: keep-alive
+Content-Length: 195
+Content-Type: application/json
+Date: Sat, 09 Mar 2019 21:51:33 GMT
+Server: Javalin
+Via: 1.1 vegur
+```
+
+### Resulting body back from the real server (200: application/json):
+
+```
+{
+   "id": "d0e4c320-8d42-4de7-ad70-2210cd9e02ae",
+   "title": "blah",
+   "completed": false,
+   "url": "https://todo-javalin.herokuapp.com/d0e4c320-8d42-4de7-ad70-2210cd9e02ae",
+   "order": -1
+}
+```
+
+## Interaction 24: DELETE /
+
+### Request headers sent to the real server:
+
+```
+Accept-Encoding: gzip, deflate, br
+Accept-Language: pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7
+Accept: text/plain, */*; q=0.01
+Cache-Control: no-cache
+Connection: keep-alive
+Content-Type: application/json
+Host: todo-javalin.herokuapp.com
+Origin: http://www.todobackend.com
+Pragma: no-cache
+Referer: http://www.todobackend.com/specs/index.html?http://todo-javalin.herokuapp.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36
+```
+
+### Body sent to the real server (application/json):
+
+```
+
+```
+
+### Resulting headers back from the real server:
+
+```
+Access-Control-Allow-Origin: http://www.todobackend.com
+Connection: keep-alive
+Content-Length: 3
+Content-Type: application/json
+Date: Sat, 09 Mar 2019 21:51:33 GMT
+Server: Javalin
+Via: 1.1 vegur
+```
+
+### Resulting body back from the real server (200: application/json):
+
+```
+[
+]
+```
+
+## Interaction 25: POST /
+
+### Request headers sent to the real server:
+
+```
+Accept-Encoding: gzip, deflate, br
+Accept-Language: pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7
+Accept: text/plain, */*; q=0.01
+Cache-Control: no-cache
+Connection: keep-alive
+Content-Length: 16
+Content-Type: application/json
+Host: todo-javalin.herokuapp.com
+Origin: http://www.todobackend.com
+Pragma: no-cache
+Referer: http://www.todobackend.com/specs/index.html?http://todo-javalin.herokuapp.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36
+```
+
+### Body sent to the real server (application/json):
+
+```
+{
+   "title": "blah"
+}
+```
+
+### Resulting headers back from the real server:
+
+```
+Access-Control-Allow-Origin: http://www.todobackend.com
+Connection: keep-alive
+Content-Length: 195
+Content-Type: application/json
+Date: Sat, 09 Mar 2019 21:51:33 GMT
+Server: Javalin
+Via: 1.1 vegur
+```
+
+### Resulting body back from the real server (200: application/json):
+
+```
+{
+   "id": "19283456-68ab-4963-8e4c-91cb8737f31e",
+   "title": "blah",
+   "completed": false,
+   "url": "https://todo-javalin.herokuapp.com/19283456-68ab-4963-8e4c-91cb8737f31e",
+   "order": -1
+}
+```
+
+## Interaction 26: POST /
+
+### Request headers sent to the real server:
+
+```
+Accept-Encoding: gzip, deflate, br
+Accept-Language: pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7
+Accept: text/plain, */*; q=0.01
+Cache-Control: no-cache
+Connection: keep-alive
+Content-Length: 28
+Content-Type: application/json
+Host: todo-javalin.herokuapp.com
+Origin: http://www.todobackend.com
+Pragma: no-cache
+Referer: http://www.todobackend.com/specs/index.html?http://todo-javalin.herokuapp.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36
+```
+
+### Body sent to the real server (application/json):
+
+```
+{
+   "title": "blah",
+   "order": 523
+}
+```
+
+### Resulting headers back from the real server:
+
+```
+Access-Control-Allow-Origin: http://www.todobackend.com
+Connection: keep-alive
+Content-Length: 196
+Content-Type: application/json
+Date: Sat, 09 Mar 2019 21:51:33 GMT
+Server: Javalin
+Via: 1.1 vegur
+```
+
+### Resulting body back from the real server (200: application/json):
+
+```
+{
+   "id": "0cff568b-51ef-484d-8853-69b26e01a1ac",
+   "title": "blah",
+   "completed": false,
+   "url": "https://todo-javalin.herokuapp.com/0cff568b-51ef-484d-8853-69b26e01a1ac",
+   "order": 523
+}
+```
+
+## Interaction 27: POST /
+
+### Request headers sent to the real server:
+
+```
+Accept-Encoding: gzip, deflate, br
+Accept-Language: pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7
+Accept: text/plain, */*; q=0.01
+Cache-Control: no-cache
+Connection: keep-alive
+Content-Length: 27
+Content-Type: application/json
+Host: todo-javalin.herokuapp.com
+Origin: http://www.todobackend.com
+Pragma: no-cache
+Referer: http://www.todobackend.com/specs/index.html?http://todo-javalin.herokuapp.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36
+```
+
+### Body sent to the real server (application/json):
+
+```
+{
+   "order": 10,
+   "title": "blah"
+}
+```
+
+### Resulting headers back from the real server:
+
+```
+Access-Control-Allow-Origin: http://www.todobackend.com
+Connection: keep-alive
+Content-Length: 195
+Content-Type: application/json
+Date: Sat, 09 Mar 2019 21:51:33 GMT
+Server: Javalin
+Via: 1.1 vegur
+```
+
+### Resulting body back from the real server (200: application/json):
+
+```
+{
+   "id": "8ea084f1-4b3a-4cf8-ae46-d8ac284f0a4d",
+   "title": "blah",
+   "completed": false,
+   "url": "https://todo-javalin.herokuapp.com/8ea084f1-4b3a-4cf8-ae46-d8ac284f0a4d",
+   "order": 10
+}
+```
+
+## Interaction 28: POST /
+
+### Request headers sent to the real server:
+
+```
+Accept-Encoding: gzip, deflate, br
+Accept-Language: pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7
+Accept: text/plain, */*; q=0.01
+Cache-Control: no-cache
+Connection: keep-alive
+Content-Length: 27
+Content-Type: application/json
+Host: todo-javalin.herokuapp.com
+Origin: http://www.todobackend.com
+Pragma: no-cache
+Referer: http://www.todobackend.com/specs/index.html?http://todo-javalin.herokuapp.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36
+```
+
+### Body sent to the real server (application/json):
+
+```
+{
+   "order": 10,
+   "title": "blah"
+}
+```
+
+### Resulting headers back from the real server:
+
+```
+Access-Control-Allow-Origin: http://www.todobackend.com
+Connection: keep-alive
+Content-Length: 195
+Content-Type: application/json
+Date: Sat, 09 Mar 2019 21:51:33 GMT
+Server: Javalin
+Via: 1.1 vegur
+```
+
+### Resulting body back from the real server (200: application/json):
+
+```
+{
+   "id": "f4c59454-2e48-4eaa-8628-16ca4615b0ac",
+   "title": "blah",
+   "completed": false,
+   "url": "https://todo-javalin.herokuapp.com/f4c59454-2e48-4eaa-8628-16ca4615b0ac",
+   "order": 10
+}
+```
+
+## Interaction 29: OPTIONS /
+
+### Request headers sent to the real server:
+
+```
+Accept-Encoding: gzip, deflate, br
+Accept-Language: pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7
+Accept: */*
+Access-Control-Request-Headers: content-type
+Access-Control-Request-Method: GET
+Cache-Control: no-cache
+Connection: keep-alive
+Host: todo-javalin.herokuapp.com
+Origin: http://www.todobackend.com
+Pragma: no-cache
+Referer: http://www.todobackend.com/specs/index.html?http://todo-javalin.herokuapp.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36
+```
+
+### Body sent to the real server ():
+
+```
+
+```
+
+### Resulting headers back from the real server:
+
+```
+Access-Control-Allow-Headers: content-type
+Access-Control-Allow-Methods: GET
+Access-Control-Allow-Origin: http://www.todobackend.com
+Connection: keep-alive
+Content-Length: 0
+Content-Type: text/plain;charset=utf-8
+Date: Sat, 09 Mar 2019 21:52:34 GMT
+Server: Javalin
+Via: 1.1 vegur
+```
+
+### Resulting body back from the real server (200: text/plain;charset=utf-8):
+
+```
+
+```
+
+## Interaction 30: GET /
+
+### Request headers sent to the real server:
+
+```
+Accept-Encoding: gzip, deflate, br
+Accept-Language: pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7
+Accept: text/plain, */*; q=0.01
+Cache-Control: no-cache
+Connection: keep-alive
+Content-Type: application/json
+Host: todo-javalin.herokuapp.com
+Origin: http://www.todobackend.com
+Pragma: no-cache
+Referer: http://www.todobackend.com/specs/index.html?http://todo-javalin.herokuapp.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36
+```
+
+### Body sent to the real server (application/json):
+
+```
+
+```
+
+### Resulting headers back from the real server:
+
+```
+Access-Control-Allow-Origin: http://www.todobackend.com
+Connection: keep-alive
+Content-Length: 875
+Content-Type: application/json
+Date: Sat, 09 Mar 2019 21:52:34 GMT
+Server: Javalin
+Via: 1.1 vegur
+```
+
+### Resulting body back from the real server (200: application/json):
+
+```
+[
+   {
+      "id": "19283456-68ab-4963-8e4c-91cb8737f31e",
+      "title": "blah",
+      "completed": false,
+      "url": "https://todo-javalin.herokuapp.com/19283456-68ab-4963-8e4c-91cb8737f31e",
+      "order": -1
+   },
+   {
+      "id": "0cff568b-51ef-484d-8853-69b26e01a1ac",
+      "title": "blah",
+      "completed": false,
+      "url": "https://todo-javalin.herokuapp.com/0cff568b-51ef-484d-8853-69b26e01a1ac",
+      "order": 523
+   },
+   {
+      "id": "8ea084f1-4b3a-4cf8-ae46-d8ac284f0a4d",
+      "title": "blah",
+      "completed": false,
+      "url": "https://todo-javalin.herokuapp.com/8ea084f1-4b3a-4cf8-ae46-d8ac284f0a4d",
+      "order": 10
+   },
+   {
+      "id": "f4c59454-2e48-4eaa-8628-16ca4615b0ac",
+      "title": "blah",
+      "completed": false,
+      "url": "https://todo-javalin.herokuapp.com/f4c59454-2e48-4eaa-8628-16ca4615b0ac",
+      "order": 10
+   }
+]
+```
+
+## Interaction 31: POST /
+
+### Request headers sent to the real server:
+
+```
+Accept-Encoding: gzip, deflate, br
+Accept-Language: pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7
+Accept: text/plain, */*; q=0.01
+Cache-Control: no-cache
+Connection: keep-alive
+Content-Length: 18
+Content-Type: application/json
+Host: todo-javalin.herokuapp.com
+Origin: http://www.todobackend.com
+Pragma: no-cache
+Referer: http://www.todobackend.com/specs/index.html?http://todo-javalin.herokuapp.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36
+```
+
+### Body sent to the real server (application/json):
+
+```
+{
+   "title": "a todo"
+}
+```
+
+### Resulting headers back from the real server:
+
+```
+Access-Control-Allow-Origin: http://www.todobackend.com
+Connection: keep-alive
+Content-Length: 197
+Content-Type: application/json
+Date: Sat, 09 Mar 2019 21:52:35 GMT
+Server: Javalin
+Via: 1.1 vegur
+```
+
+### Resulting body back from the real server (200: application/json):
+
+```
+{
+   "id": "60766e34-13a4-41af-9045-74a6d3447e8c",
+   "title": "a todo",
+   "completed": false,
+   "url": "https://todo-javalin.herokuapp.com/60766e34-13a4-41af-9045-74a6d3447e8c",
+   "order": -1
+}
+```
+
+## Interaction 32: OPTIONS /
+
+### Request headers sent to the real server:
+
+```
+Accept-Encoding: gzip, deflate, br
+Accept-Language: pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7
+Accept: */*
+Access-Control-Request-Headers: content-type
+Access-Control-Request-Method: DELETE
+Cache-Control: no-cache
+Connection: keep-alive
+Host: todo-javalin.herokuapp.com
+Origin: http://www.todobackend.com
+Pragma: no-cache
+Referer: http://www.todobackend.com/specs/index.html?http://todo-javalin.herokuapp.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36
+```
+
+### Body sent to the real server ():
+
+```
+
+```
+
+### Resulting headers back from the real server:
+
+```
+Access-Control-Allow-Headers: content-type
+Access-Control-Allow-Methods: DELETE
+Access-Control-Allow-Origin: http://www.todobackend.com
+Connection: keep-alive
+Content-Length: 0
+Content-Type: text/plain;charset=utf-8
+Date: Sat, 09 Mar 2019 21:52:35 GMT
+Server: Javalin
+Via: 1.1 vegur
+```
+
+### Resulting body back from the real server (200: text/plain;charset=utf-8):
+
+```
+
+```
+
+## Interaction 33: DELETE /
+
+### Request headers sent to the real server:
+
+```
+Accept-Encoding: gzip, deflate, br
+Accept-Language: pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7
+Accept: text/plain, */*; q=0.01
+Cache-Control: no-cache
+Connection: keep-alive
+Content-Type: application/json
+Host: todo-javalin.herokuapp.com
+Origin: http://www.todobackend.com
+Pragma: no-cache
+Referer: http://www.todobackend.com/specs/index.html?http://todo-javalin.herokuapp.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36
+```
+
+### Body sent to the real server (application/json):
+
+```
+
+```
+
+### Resulting headers back from the real server:
+
+```
+Access-Control-Allow-Origin: http://www.todobackend.com
+Connection: keep-alive
+Content-Length: 3
+Content-Type: application/json
+Date: Sat, 09 Mar 2019 21:52:35 GMT
+Server: Javalin
+Via: 1.1 vegur
+```
+
+### Resulting body back from the real server (200: application/json):
+
+```
+[
+]
+```
+
+## Interaction 34: DELETE /
+
+### Request headers sent to the real server:
+
+```
+Accept-Encoding: gzip, deflate, br
+Accept-Language: pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7
+Accept: text/plain, */*; q=0.01
+Cache-Control: no-cache
+Connection: keep-alive
+Content-Type: application/json
+Host: todo-javalin.herokuapp.com
+Origin: http://www.todobackend.com
+Pragma: no-cache
+Referer: http://www.todobackend.com/specs/index.html?http://todo-javalin.herokuapp.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36
+```
+
+### Body sent to the real server (application/json):
+
+```
+
+```
+
+### Resulting headers back from the real server:
+
+```
+Access-Control-Allow-Origin: http://www.todobackend.com
+Connection: keep-alive
+Content-Length: 3
+Content-Type: application/json
+Date: Sat, 09 Mar 2019 21:52:35 GMT
+Server: Javalin
+Via: 1.1 vegur
+```
+
+### Resulting body back from the real server (200: application/json):
+
+```
+[
+]
+```
+
+## Interaction 35: GET /
+
+### Request headers sent to the real server:
+
+```
+Accept-Encoding: gzip, deflate, br
+Accept-Language: pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7
+Accept: text/plain, */*; q=0.01
+Cache-Control: no-cache
+Connection: keep-alive
+Content-Type: application/json
+Host: todo-javalin.herokuapp.com
+Origin: http://www.todobackend.com
+Pragma: no-cache
+Referer: http://www.todobackend.com/specs/index.html?http://todo-javalin.herokuapp.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36
+```
+
+### Body sent to the real server (application/json):
+
+```
+
+```
+
+### Resulting headers back from the real server:
+
+```
+Access-Control-Allow-Origin: http://www.todobackend.com
+Connection: keep-alive
+Content-Length: 3
+Content-Type: application/json
+Date: Sat, 09 Mar 2019 21:52:35 GMT
+Server: Javalin
+Via: 1.1 vegur
+```
+
+### Resulting body back from the real server (200: application/json):
+
+```
+[
+]
+```
+
+## Interaction 36: DELETE /
+
+### Request headers sent to the real server:
+
+```
+Accept-Encoding: gzip, deflate, br
+Accept-Language: pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7
+Accept: text/plain, */*; q=0.01
+Cache-Control: no-cache
+Connection: keep-alive
+Content-Type: application/json
+Host: todo-javalin.herokuapp.com
+Origin: http://www.todobackend.com
+Pragma: no-cache
+Referer: http://www.todobackend.com/specs/index.html?http://todo-javalin.herokuapp.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36
+```
+
+### Body sent to the real server (application/json):
+
+```
+
+```
+
+### Resulting headers back from the real server:
+
+```
+Access-Control-Allow-Origin: http://www.todobackend.com
+Connection: keep-alive
+Content-Length: 3
+Content-Type: application/json
+Date: Sat, 09 Mar 2019 21:52:36 GMT
+Server: Javalin
+Via: 1.1 vegur
+```
+
+### Resulting body back from the real server (200: application/json):
+
+```
+[
+]
+```
+
+## Interaction 37: POST /
+
+### Request headers sent to the real server:
+
+```
+Accept-Encoding: gzip, deflate, br
+Accept-Language: pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7
+Accept: text/plain, */*; q=0.01
+Cache-Control: no-cache
+Connection: keep-alive
+Content-Length: 24
+Content-Type: application/json
+Host: todo-javalin.herokuapp.com
+Origin: http://www.todobackend.com
+Pragma: no-cache
+Referer: http://www.todobackend.com/specs/index.html?http://todo-javalin.herokuapp.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36
+```
+
+### Body sent to the real server (application/json):
+
+```
+{
+   "title": "walk the dog"
+}
+```
+
+### Resulting headers back from the real server:
+
+```
+Access-Control-Allow-Origin: http://www.todobackend.com
+Connection: keep-alive
+Content-Length: 203
+Content-Type: application/json
+Date: Sat, 09 Mar 2019 21:52:36 GMT
+Server: Javalin
+Via: 1.1 vegur
+```
+
+### Resulting body back from the real server (200: application/json):
+
+```
+{
+   "id": "b2ee5257-1a8c-4d02-a319-58cdc15283c4",
+   "title": "walk the dog",
+   "completed": false,
+   "url": "https://todo-javalin.herokuapp.com/b2ee5257-1a8c-4d02-a319-58cdc15283c4",
+   "order": -1
+}
+```
+
+## Interaction 38: DELETE /
+
+### Request headers sent to the real server:
+
+```
+Accept-Encoding: gzip, deflate, br
+Accept-Language: pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7
+Accept: text/plain, */*; q=0.01
+Cache-Control: no-cache
+Connection: keep-alive
+Content-Type: application/json
+Host: todo-javalin.herokuapp.com
+Origin: http://www.todobackend.com
+Pragma: no-cache
+Referer: http://www.todobackend.com/specs/index.html?http://todo-javalin.herokuapp.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36
+```
+
+### Body sent to the real server (application/json):
+
+```
+
+```
+
+### Resulting headers back from the real server:
+
+```
+Access-Control-Allow-Origin: http://www.todobackend.com
+Connection: keep-alive
+Content-Length: 3
+Content-Type: application/json
+Date: Sat, 09 Mar 2019 21:52:36 GMT
+Server: Javalin
+Via: 1.1 vegur
+```
+
+### Resulting body back from the real server (200: application/json):
+
+```
+[
+]
+```
+
+## Interaction 39: POST /
+
+### Request headers sent to the real server:
+
+```
+Accept-Encoding: gzip, deflate, br
+Accept-Language: pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7
+Accept: text/plain, */*; q=0.01
+Cache-Control: no-cache
+Connection: keep-alive
+Content-Length: 16
+Content-Type: application/json
+Host: todo-javalin.herokuapp.com
+Origin: http://www.todobackend.com
+Pragma: no-cache
+Referer: http://www.todobackend.com/specs/index.html?http://todo-javalin.herokuapp.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36
+```
+
+### Body sent to the real server (application/json):
+
+```
+{
+   "title": "blah"
+}
+```
+
+### Resulting headers back from the real server:
+
+```
+Access-Control-Allow-Origin: http://www.todobackend.com
+Connection: keep-alive
+Content-Length: 195
+Content-Type: application/json
+Date: Sat, 09 Mar 2019 21:52:36 GMT
+Server: Javalin
+Via: 1.1 vegur
+```
+
+### Resulting body back from the real server (200: application/json):
+
+```
+{
+   "id": "a40ca85a-dc06-4e94-8fcc-df3abe4f3128",
+   "title": "blah",
+   "completed": false,
+   "url": "https://todo-javalin.herokuapp.com/a40ca85a-dc06-4e94-8fcc-df3abe4f3128",
+   "order": -1
+}
+```
+
+## Interaction 40: DELETE /
+
+### Request headers sent to the real server:
+
+```
+Accept-Encoding: gzip, deflate, br
+Accept-Language: pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7
+Accept: text/plain, */*; q=0.01
+Cache-Control: no-cache
+Connection: keep-alive
+Content-Type: application/json
+Host: todo-javalin.herokuapp.com
+Origin: http://www.todobackend.com
+Pragma: no-cache
+Referer: http://www.todobackend.com/specs/index.html?http://todo-javalin.herokuapp.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36
+```
+
+### Body sent to the real server (application/json):
+
+```
+
+```
+
+### Resulting headers back from the real server:
+
+```
+Access-Control-Allow-Origin: http://www.todobackend.com
+Connection: keep-alive
+Content-Length: 3
+Content-Type: application/json
+Date: Sat, 09 Mar 2019 21:52:36 GMT
+Server: Javalin
+Via: 1.1 vegur
+```
+
+### Resulting body back from the real server (200: application/json):
+
+```
+[
+]
+```
+
+## Interaction 41: POST /
+
+### Request headers sent to the real server:
+
+```
+Accept-Encoding: gzip, deflate, br
+Accept-Language: pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7
+Accept: text/plain, */*; q=0.01
+Cache-Control: no-cache
+Connection: keep-alive
+Content-Length: 16
+Content-Type: application/json
+Host: todo-javalin.herokuapp.com
+Origin: http://www.todobackend.com
+Pragma: no-cache
+Referer: http://www.todobackend.com/specs/index.html?http://todo-javalin.herokuapp.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36
+```
+
+### Body sent to the real server (application/json):
+
+```
+{
+   "title": "blah"
+}
+```
+
+### Resulting headers back from the real server:
+
+```
+Access-Control-Allow-Origin: http://www.todobackend.com
+Connection: keep-alive
+Content-Length: 195
+Content-Type: application/json
+Date: Sat, 09 Mar 2019 21:52:36 GMT
+Server: Javalin
+Via: 1.1 vegur
+```
+
+### Resulting body back from the real server (200: application/json):
+
+```
+{
+   "id": "9e504ebb-f3cb-49db-b709-3a15a6114fca",
+   "title": "blah",
+   "completed": false,
+   "url": "https://todo-javalin.herokuapp.com/9e504ebb-f3cb-49db-b709-3a15a6114fca",
+   "order": -1
+}
+```
+
+## Interaction 42: DELETE /
+
+### Request headers sent to the real server:
+
+```
+Accept-Encoding: gzip, deflate, br
+Accept-Language: pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7
+Accept: text/plain, */*; q=0.01
+Cache-Control: no-cache
+Connection: keep-alive
+Content-Type: application/json
+Host: todo-javalin.herokuapp.com
+Origin: http://www.todobackend.com
+Pragma: no-cache
+Referer: http://www.todobackend.com/specs/index.html?http://todo-javalin.herokuapp.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36
+```
+
+### Body sent to the real server (application/json):
+
+```
+
+```
+
+### Resulting headers back from the real server:
+
+```
+Access-Control-Allow-Origin: http://www.todobackend.com
+Connection: keep-alive
+Content-Length: 3
+Content-Type: application/json
+Date: Sat, 09 Mar 2019 21:52:37 GMT
+Server: Javalin
+Via: 1.1 vegur
+```
+
+### Resulting body back from the real server (200: application/json):
+
+```
+[
+]
+```
+
+## Interaction 43: POST /
+
+### Request headers sent to the real server:
+
+```
+Accept-Encoding: gzip, deflate, br
+Accept-Language: pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7
+Accept: text/plain, */*; q=0.01
+Cache-Control: no-cache
+Connection: keep-alive
+Content-Length: 19
+Content-Type: application/json
+Host: todo-javalin.herokuapp.com
+Origin: http://www.todobackend.com
+Pragma: no-cache
+Referer: http://www.todobackend.com/specs/index.html?http://todo-javalin.herokuapp.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36
+```
+
+### Body sent to the real server (application/json):
+
+```
+{
+   "title": "my todo"
+}
+```
+
+### Resulting headers back from the real server:
+
+```
+Access-Control-Allow-Origin: http://www.todobackend.com
+Connection: keep-alive
+Content-Length: 198
+Content-Type: application/json
+Date: Sat, 09 Mar 2019 21:52:37 GMT
+Server: Javalin
+Via: 1.1 vegur
+```
+
+### Resulting body back from the real server (200: application/json):
+
+```
+{
+   "id": "d3ba04cc-6bd7-4f3d-ae4d-c10207c9eb21",
+   "title": "my todo",
+   "completed": false,
+   "url": "https://todo-javalin.herokuapp.com/d3ba04cc-6bd7-4f3d-ae4d-c10207c9eb21",
+   "order": -1
+}
+```
+
+## Interaction 44: DELETE /
+
+### Request headers sent to the real server:
+
+```
+Accept-Encoding: gzip, deflate, br
+Accept-Language: pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7
+Accept: text/plain, */*; q=0.01
+Cache-Control: no-cache
+Connection: keep-alive
+Content-Type: application/json
+Host: todo-javalin.herokuapp.com
+Origin: http://www.todobackend.com
+Pragma: no-cache
+Referer: http://www.todobackend.com/specs/index.html?http://todo-javalin.herokuapp.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36
+```
+
+### Body sent to the real server (application/json):
+
+```
+
+```
+
+### Resulting headers back from the real server:
+
+```
+Access-Control-Allow-Origin: http://www.todobackend.com
+Connection: keep-alive
+Content-Length: 3
+Content-Type: application/json
+Date: Sat, 09 Mar 2019 21:52:37 GMT
+Server: Javalin
+Via: 1.1 vegur
+```
+
+### Resulting body back from the real server (200: application/json):
+
+```
+[
+]
+```
+
+## Interaction 45: POST /
+
+### Request headers sent to the real server:
+
+```
+Accept-Encoding: gzip, deflate, br
+Accept-Language: pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7
+Accept: text/plain, */*; q=0.01
+Cache-Control: no-cache
+Connection: keep-alive
+Content-Length: 27
+Content-Type: application/json
+Host: todo-javalin.herokuapp.com
+Origin: http://www.todobackend.com
+Pragma: no-cache
+Referer: http://www.todobackend.com/specs/index.html?http://todo-javalin.herokuapp.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36
+```
+
+### Body sent to the real server (application/json):
+
+```
+{
+   "title": "todo the second"
+}
+```
+
+### Resulting headers back from the real server:
+
+```
+Access-Control-Allow-Origin: http://www.todobackend.com
+Connection: keep-alive
+Content-Length: 206
+Content-Type: application/json
+Date: Sat, 09 Mar 2019 21:52:37 GMT
+Server: Javalin
+Via: 1.1 vegur
+```
+
+### Resulting body back from the real server (200: application/json):
+
+```
+{
+   "id": "686e9c62-5fa1-45f5-9e46-806046138157",
+   "title": "todo the second",
+   "completed": false,
+   "url": "https://todo-javalin.herokuapp.com/686e9c62-5fa1-45f5-9e46-806046138157",
+   "order": -1
+}
+```
+
+## Interaction 46: POST /
+
+### Request headers sent to the real server:
+
+```
+Accept-Encoding: gzip, deflate, br
+Accept-Language: pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7
+Accept: text/plain, */*; q=0.01
+Cache-Control: no-cache
+Connection: keep-alive
+Content-Length: 26
+Content-Type: application/json
+Host: todo-javalin.herokuapp.com
+Origin: http://www.todobackend.com
+Pragma: no-cache
+Referer: http://www.todobackend.com/specs/index.html?http://todo-javalin.herokuapp.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36
+```
+
+### Body sent to the real server (application/json):
+
+```
+{
+   "title": "todo the first"
+}
+```
+
+### Resulting headers back from the real server:
+
+```
+Access-Control-Allow-Origin: http://www.todobackend.com
+Connection: keep-alive
+Content-Length: 205
+Content-Type: application/json
+Date: Sat, 09 Mar 2019 21:52:37 GMT
+Server: Javalin
+Via: 1.1 vegur
+```
+
+### Resulting body back from the real server (200: application/json):
+
+```
+{
+   "id": "5898c999-bd9e-4db5-81a4-89e3c39b0ce5",
+   "title": "todo the first",
+   "completed": false,
+   "url": "https://todo-javalin.herokuapp.com/5898c999-bd9e-4db5-81a4-89e3c39b0ce5",
+   "order": -1
+}
+```
+
+## Interaction 47: DELETE /
+
+### Request headers sent to the real server:
+
+```
+Accept-Encoding: gzip, deflate, br
+Accept-Language: pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7
+Accept: text/plain, */*; q=0.01
+Cache-Control: no-cache
+Connection: keep-alive
+Content-Type: application/json
+Host: todo-javalin.herokuapp.com
+Origin: http://www.todobackend.com
+Pragma: no-cache
+Referer: http://www.todobackend.com/specs/index.html?http://todo-javalin.herokuapp.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36
+```
+
+### Body sent to the real server (application/json):
+
+```
+
+```
+
+### Resulting headers back from the real server:
+
+```
+Access-Control-Allow-Origin: http://www.todobackend.com
+Connection: keep-alive
+Content-Length: 3
+Content-Type: application/json
+Date: Sat, 09 Mar 2019 21:52:37 GMT
+Server: Javalin
+Via: 1.1 vegur
+```
+
+### Resulting body back from the real server (200: application/json):
+
+```
+[
+]
+```
+
+## Interaction 48: POST /
+
+### Request headers sent to the real server:
+
+```
+Accept-Encoding: gzip, deflate, br
+Accept-Language: pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7
+Accept: text/plain, */*; q=0.01
+Cache-Control: no-cache
+Connection: keep-alive
+Content-Length: 25
+Content-Type: application/json
+Host: todo-javalin.herokuapp.com
+Origin: http://www.todobackend.com
+Pragma: no-cache
+Referer: http://www.todobackend.com/specs/index.html?http://todo-javalin.herokuapp.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36
+```
+
+### Body sent to the real server (application/json):
+
+```
+{
+   "title": "initial title"
+}
+```
+
+### Resulting headers back from the real server:
+
+```
+Access-Control-Allow-Origin: http://www.todobackend.com
+Connection: keep-alive
+Content-Length: 204
+Content-Type: application/json
+Date: Sat, 09 Mar 2019 21:52:38 GMT
+Server: Javalin
+Via: 1.1 vegur
+```
+
+### Resulting body back from the real server (200: application/json):
+
+```
+{
+   "id": "07e709b4-0081-4afe-9885-366113ba0c89",
+   "title": "initial title",
+   "completed": false,
+   "url": "https://todo-javalin.herokuapp.com/07e709b4-0081-4afe-9885-366113ba0c89",
+   "order": -1
+}
+```
+
+## Interaction 49: DELETE /
+
+### Request headers sent to the real server:
+
+```
+Accept-Encoding: gzip, deflate, br
+Accept-Language: pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7
+Accept: text/plain, */*; q=0.01
+Cache-Control: no-cache
+Connection: keep-alive
+Content-Type: application/json
+Host: todo-javalin.herokuapp.com
+Origin: http://www.todobackend.com
+Pragma: no-cache
+Referer: http://www.todobackend.com/specs/index.html?http://todo-javalin.herokuapp.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36
+```
+
+### Body sent to the real server (application/json):
+
+```
+
+```
+
+### Resulting headers back from the real server:
+
+```
+Access-Control-Allow-Origin: http://www.todobackend.com
+Connection: keep-alive
+Content-Length: 3
+Content-Type: application/json
+Date: Sat, 09 Mar 2019 21:52:38 GMT
+Server: Javalin
+Via: 1.1 vegur
+```
+
+### Resulting body back from the real server (200: application/json):
+
+```
+[
+]
+```
+
+## Interaction 50: POST /
+
+### Request headers sent to the real server:
+
+```
+Accept-Encoding: gzip, deflate, br
+Accept-Language: pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7
+Accept: text/plain, */*; q=0.01
+Cache-Control: no-cache
+Connection: keep-alive
+Content-Length: 16
+Content-Type: application/json
+Host: todo-javalin.herokuapp.com
+Origin: http://www.todobackend.com
+Pragma: no-cache
+Referer: http://www.todobackend.com/specs/index.html?http://todo-javalin.herokuapp.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36
+```
+
+### Body sent to the real server (application/json):
+
+```
+{
+   "title": "blah"
+}
+```
+
+### Resulting headers back from the real server:
+
+```
+Access-Control-Allow-Origin: http://www.todobackend.com
+Connection: keep-alive
+Content-Length: 195
+Content-Type: application/json
+Date: Sat, 09 Mar 2019 21:52:38 GMT
+Server: Javalin
+Via: 1.1 vegur
+```
+
+### Resulting body back from the real server (200: application/json):
+
+```
+{
+   "id": "6057c20d-bc30-4e87-ad35-d9226d6f4559",
+   "title": "blah",
+   "completed": false,
+   "url": "https://todo-javalin.herokuapp.com/6057c20d-bc30-4e87-ad35-d9226d6f4559",
+   "order": -1
+}
+```
+
+## Interaction 51: DELETE /
+
+### Request headers sent to the real server:
+
+```
+Accept-Encoding: gzip, deflate, br
+Accept-Language: pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7
+Accept: text/plain, */*; q=0.01
+Cache-Control: no-cache
+Connection: keep-alive
+Content-Type: application/json
+Host: todo-javalin.herokuapp.com
+Origin: http://www.todobackend.com
+Pragma: no-cache
+Referer: http://www.todobackend.com/specs/index.html?http://todo-javalin.herokuapp.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36
+```
+
+### Body sent to the real server (application/json):
+
+```
+
+```
+
+### Resulting headers back from the real server:
+
+```
+Access-Control-Allow-Origin: http://www.todobackend.com
+Connection: keep-alive
+Content-Length: 3
+Content-Type: application/json
+Date: Sat, 09 Mar 2019 21:52:38 GMT
+Server: Javalin
+Via: 1.1 vegur
+```
+
+### Resulting body back from the real server (200: application/json):
+
+```
+[
+]
+```
+
+## Interaction 52: POST /
+
+### Request headers sent to the real server:
+
+```
+Accept-Encoding: gzip, deflate, br
+Accept-Language: pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7
+Accept: text/plain, */*; q=0.01
+Cache-Control: no-cache
+Connection: keep-alive
+Content-Length: 16
+Content-Type: application/json
+Host: todo-javalin.herokuapp.com
+Origin: http://www.todobackend.com
+Pragma: no-cache
+Referer: http://www.todobackend.com/specs/index.html?http://todo-javalin.herokuapp.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36
+```
+
+### Body sent to the real server (application/json):
+
+```
+{
+   "title": "blah"
+}
+```
+
+### Resulting headers back from the real server:
+
+```
+Access-Control-Allow-Origin: http://www.todobackend.com
+Connection: keep-alive
+Content-Length: 195
+Content-Type: application/json
+Date: Sat, 09 Mar 2019 21:52:38 GMT
+Server: Javalin
+Via: 1.1 vegur
+```
+
+### Resulting body back from the real server (200: application/json):
+
+```
+{
+   "id": "935caf63-58c8-4035-ba25-fe6a088e50c8",
+   "title": "blah",
+   "completed": false,
+   "url": "https://todo-javalin.herokuapp.com/935caf63-58c8-4035-ba25-fe6a088e50c8",
+   "order": -1
+}
+```
+
+## Interaction 53: DELETE /
+
+### Request headers sent to the real server:
+
+```
+Accept-Encoding: gzip, deflate, br
+Accept-Language: pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7
+Accept: text/plain, */*; q=0.01
+Cache-Control: no-cache
+Connection: keep-alive
+Content-Type: application/json
+Host: todo-javalin.herokuapp.com
+Origin: http://www.todobackend.com
+Pragma: no-cache
+Referer: http://www.todobackend.com/specs/index.html?http://todo-javalin.herokuapp.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36
+```
+
+### Body sent to the real server (application/json):
+
+```
+
+```
+
+### Resulting headers back from the real server:
+
+```
+Access-Control-Allow-Origin: http://www.todobackend.com
+Connection: keep-alive
+Content-Length: 3
+Content-Type: application/json
+Date: Sat, 09 Mar 2019 21:52:38 GMT
+Server: Javalin
+Via: 1.1 vegur
+```
+
+### Resulting body back from the real server (200: application/json):
+
+```
+[
+]
+```
+
+## Interaction 54: POST /
+
+### Request headers sent to the real server:
+
+```
+Accept-Encoding: gzip, deflate, br
+Accept-Language: pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7
+Accept: text/plain, */*; q=0.01
+Cache-Control: no-cache
+Connection: keep-alive
+Content-Length: 16
+Content-Type: application/json
+Host: todo-javalin.herokuapp.com
+Origin: http://www.todobackend.com
+Pragma: no-cache
+Referer: http://www.todobackend.com/specs/index.html?http://todo-javalin.herokuapp.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36
+```
+
+### Body sent to the real server (application/json):
+
+```
+{
+   "title": "blah"
+}
+```
+
+### Resulting headers back from the real server:
+
+```
+Access-Control-Allow-Origin: http://www.todobackend.com
+Connection: keep-alive
+Content-Length: 195
+Content-Type: application/json
+Date: Sat, 09 Mar 2019 21:52:39 GMT
+Server: Javalin
+Via: 1.1 vegur
+```
+
+### Resulting body back from the real server (200: application/json):
+
+```
+{
+   "id": "839c8c29-ef91-41c9-a111-7d23f933a0d4",
+   "title": "blah",
+   "completed": false,
+   "url": "https://todo-javalin.herokuapp.com/839c8c29-ef91-41c9-a111-7d23f933a0d4",
+   "order": -1
+}
+```
+
+## Interaction 55: POST /
+
+### Request headers sent to the real server:
+
+```
+Accept-Encoding: gzip, deflate, br
+Accept-Language: pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7
+Accept: text/plain, */*; q=0.01
+Cache-Control: no-cache
+Connection: keep-alive
+Content-Length: 28
+Content-Type: application/json
+Host: todo-javalin.herokuapp.com
+Origin: http://www.todobackend.com
+Pragma: no-cache
+Referer: http://www.todobackend.com/specs/index.html?http://todo-javalin.herokuapp.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36
+```
+
+### Body sent to the real server (application/json):
+
+```
+{
+   "title": "blah",
+   "order": 523
+}
+```
+
+### Resulting headers back from the real server:
+
+```
+Access-Control-Allow-Origin: http://www.todobackend.com
+Connection: keep-alive
+Content-Length: 196
+Content-Type: application/json
+Date: Sat, 09 Mar 2019 21:52:39 GMT
+Server: Javalin
+Via: 1.1 vegur
+```
+
+### Resulting body back from the real server (200: application/json):
+
+```
+{
+   "id": "1862c0c4-7ca4-4226-82c4-050f3ae729b7",
+   "title": "blah",
+   "completed": false,
+   "url": "https://todo-javalin.herokuapp.com/1862c0c4-7ca4-4226-82c4-050f3ae729b7",
+   "order": 523
+}
+```
+
+## Interaction 56: POST /
+
+### Request headers sent to the real server:
+
+```
+Accept-Encoding: gzip, deflate, br
+Accept-Language: pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7
+Accept: text/plain, */*; q=0.01
+Cache-Control: no-cache
+Connection: keep-alive
+Content-Length: 27
+Content-Type: application/json
+Host: todo-javalin.herokuapp.com
+Origin: http://www.todobackend.com
+Pragma: no-cache
+Referer: http://www.todobackend.com/specs/index.html?http://todo-javalin.herokuapp.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36
+```
+
+### Body sent to the real server (application/json):
+
+```
+{
+   "order": 10,
+   "title": "blah"
+}
+```
+
+### Resulting headers back from the real server:
+
+```
+Access-Control-Allow-Origin: http://www.todobackend.com
+Connection: keep-alive
+Content-Length: 195
+Content-Type: application/json
+Date: Sat, 09 Mar 2019 21:52:39 GMT
+Server: Javalin
+Via: 1.1 vegur
+```
+
+### Resulting body back from the real server (200: application/json):
+
+```
+{
+   "id": "b7d28551-cd69-4c57-aa1b-1e7870446f67",
+   "title": "blah",
+   "completed": false,
+   "url": "https://todo-javalin.herokuapp.com/b7d28551-cd69-4c57-aa1b-1e7870446f67",
+   "order": 10
+}
+```
+
+## Interaction 57: POST /
+
+### Request headers sent to the real server:
+
+```
+Accept-Encoding: gzip, deflate, br
+Accept-Language: pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7
+Accept: text/plain, */*; q=0.01
+Cache-Control: no-cache
+Connection: keep-alive
+Content-Length: 27
+Content-Type: application/json
+Host: todo-javalin.herokuapp.com
+Origin: http://www.todobackend.com
+Pragma: no-cache
+Referer: http://www.todobackend.com/specs/index.html?http://todo-javalin.herokuapp.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36
+```
+
+### Body sent to the real server (application/json):
+
+```
+{
+   "order": 10,
+   "title": "blah"
+}
+```
+
+### Resulting headers back from the real server:
+
+```
+Access-Control-Allow-Origin: http://www.todobackend.com
+Connection: keep-alive
+Content-Length: 195
+Content-Type: application/json
+Date: Sat, 09 Mar 2019 21:52:39 GMT
+Server: Javalin
+Via: 1.1 vegur
+```
+
+### Resulting body back from the real server (200: application/json):
+
+```
+{
+   "id": "671ef78b-d2fb-4b44-887d-fc73add00270",
+   "title": "blah",
+   "completed": false,
+   "url": "https://todo-javalin.herokuapp.com/671ef78b-d2fb-4b44-887d-fc73add00270",
+   "order": 10
+}
+```
+
+## Interaction 0: OPTIONS /
+
+### Request headers sent to the real server:
+
+```
+Accept-Encoding: gzip, deflate, br
+Accept-Language: pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7
+Accept: */*
+Access-Control-Request-Headers: content-type
+Access-Control-Request-Method: GET
+Cache-Control: no-cache
+Connection: keep-alive
+Host: todo-javalin.herokuapp.com
+Origin: http://www.todobackend.com
+Pragma: no-cache
+Referer: http://www.todobackend.com/specs/index.html?http://todo-javalin.herokuapp.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36
+```
+
+### Body sent to the real server ():
+
+```
+
+```
+
+### Resulting headers back from the real server:
+
+```
+Access-Control-Allow-Headers: content-type
+Access-Control-Allow-Methods: GET
+Access-Control-Allow-Origin: http://www.todobackend.com
+Connection: keep-alive
+Content-Length: 0
+Content-Type: text/plain;charset=utf-8
+Date: Sat, 09 Mar 2019 21:54:44 GMT
+Server: Javalin
+Via: 1.1 vegur
+```
+
+### Resulting body back from the real server (200: text/plain;charset=utf-8):
+
+```
+
+```
+
+## Interaction 1: GET /
+
+### Request headers sent to the real server:
+
+```
+Accept-Encoding: gzip, deflate, br
+Accept-Language: pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7
+Accept: text/plain, */*; q=0.01
+Cache-Control: no-cache
+Connection: keep-alive
+Content-Type: application/json
+Host: todo-javalin.herokuapp.com
+Origin: http://www.todobackend.com
+Pragma: no-cache
+Referer: http://www.todobackend.com/specs/index.html?http://todo-javalin.herokuapp.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36
+```
+
+### Body sent to the real server (application/json):
+
+```
+
+```
+
+### Resulting headers back from the real server:
+
+```
+Access-Control-Allow-Origin: http://www.todobackend.com
+Connection: keep-alive
+Content-Length: 875
+Content-Type: application/json
+Date: Sat, 09 Mar 2019 21:55:05 GMT
+Server: Javalin
+Via: 1.1 vegur
+```
+
+### Resulting body back from the real server (200: application/json):
+
+```
+[
+   {
+      "id": "839c8c29-ef91-41c9-a111-7d23f933a0d4",
+      "title": "blah",
+      "completed": false,
+      "url": "https://todo-javalin.herokuapp.com/839c8c29-ef91-41c9-a111-7d23f933a0d4",
+      "order": -1
+   },
+   {
+      "id": "1862c0c4-7ca4-4226-82c4-050f3ae729b7",
+      "title": "blah",
+      "completed": false,
+      "url": "https://todo-javalin.herokuapp.com/1862c0c4-7ca4-4226-82c4-050f3ae729b7",
+      "order": 523
+   },
+   {
+      "id": "b7d28551-cd69-4c57-aa1b-1e7870446f67",
+      "title": "blah",
+      "completed": false,
+      "url": "https://todo-javalin.herokuapp.com/b7d28551-cd69-4c57-aa1b-1e7870446f67",
+      "order": 10
+   },
+   {
+      "id": "671ef78b-d2fb-4b44-887d-fc73add00270",
+      "title": "blah",
+      "completed": false,
+      "url": "https://todo-javalin.herokuapp.com/671ef78b-d2fb-4b44-887d-fc73add00270",
+      "order": 10
+   }
+]
+```
+
+## Interaction 2: OPTIONS /
+
+### Request headers sent to the real server:
+
+```
+Accept-Encoding: gzip, deflate, br
+Accept-Language: pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7
+Accept: */*
+Access-Control-Request-Headers: content-type
+Access-Control-Request-Method: POST
+Cache-Control: no-cache
+Connection: keep-alive
+Host: todo-javalin.herokuapp.com
+Origin: http://www.todobackend.com
+Pragma: no-cache
+Referer: http://www.todobackend.com/specs/index.html?http://todo-javalin.herokuapp.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36
+```
+
+### Body sent to the real server ():
+
+```
+
+```
+
+### Resulting headers back from the real server:
+
+```
+Access-Control-Allow-Headers: content-type
+Access-Control-Allow-Methods: POST
+Access-Control-Allow-Origin: http://www.todobackend.com
+Connection: keep-alive
+Content-Length: 0
+Content-Type: text/plain;charset=utf-8
+Date: Sat, 09 Mar 2019 21:55:14 GMT
+Server: Javalin
+Via: 1.1 vegur
+```
+
+### Resulting body back from the real server (200: text/plain;charset=utf-8):
+
+```
+
+```
+
+## Interaction 3: POST /
+
+### Request headers sent to the real server:
+
+```
+Accept-Encoding: gzip, deflate, br
+Accept-Language: pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7
+Accept: text/plain, */*; q=0.01
+Cache-Control: no-cache
+Connection: keep-alive
+Content-Length: 18
+Content-Type: application/json
+Host: todo-javalin.herokuapp.com
+Origin: http://www.todobackend.com
+Pragma: no-cache
+Referer: http://www.todobackend.com/specs/index.html?http://todo-javalin.herokuapp.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36
+```
+
+### Body sent to the real server (application/json):
+
+```
+{
+   "title": "a todo"
+}
+```
+
+### Resulting headers back from the real server:
+
+```
+Access-Control-Allow-Origin: http://www.todobackend.com
+Connection: keep-alive
+Content-Length: 197
+Content-Type: application/json
+Date: Sat, 09 Mar 2019 22:02:42 GMT
+Server: Javalin
+Via: 1.1 vegur
+```
+
+### Resulting body back from the real server (200: application/json):
+
+```
+{
+   "id": "4be76df6-3c0f-41d1-86e2-8354f5e0c6e4",
+   "title": "a todo",
+   "completed": false,
+   "url": "https://todo-javalin.herokuapp.com/4be76df6-3c0f-41d1-86e2-8354f5e0c6e4",
+   "order": -1
+}
+```
+
+## Interaction 8: OPTIONS /
+
+### Request headers sent to the real server:
+
+```
+Accept-Encoding: gzip, deflate, br
+Accept-Language: pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7
+Accept: */*
+Access-Control-Request-Headers: content-type
+Access-Control-Request-Method: POST
+Cache-Control: no-cache
+Connection: keep-alive
+Host: todo-javalin.herokuapp.com
+Origin: http://www.todobackend.com
+Pragma: no-cache
+Referer: http://www.todobackend.com/specs/index.html?http://todo-javalin.herokuapp.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36
+```
+
+### Body sent to the real server ():
+
+```
+
+```
+
+### Resulting headers back from the real server:
+
+```
+Access-Control-Allow-Headers: content-type
+Access-Control-Allow-Methods: POST
+Access-Control-Allow-Origin: http://www.todobackend.com
+Connection: keep-alive
+Content-Length: 0
+Content-Type: text/plain;charset=utf-8
+Date: Sat, 09 Mar 2019 22:02:42 GMT
+Server: Javalin
+Via: 1.1 vegur
+```
+
+### Resulting body back from the real server (200: text/plain;charset=utf-8):
+
+```
+
+```
+
+## Interaction 7: OPTIONS /
+
+### Request headers sent to the real server:
+
+```
+Accept-Encoding: gzip, deflate, br
+Accept-Language: pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7
+Accept: */*
+Access-Control-Request-Headers: content-type
+Access-Control-Request-Method: DELETE
+Cache-Control: no-cache
+Connection: keep-alive
+Host: todo-javalin.herokuapp.com
+Origin: http://www.todobackend.com
+Pragma: no-cache
+Referer: http://www.todobackend.com/specs/index.html?http://todo-javalin.herokuapp.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36
+```
+
+### Body sent to the real server ():
+
+```
+
+```
+
+### Resulting headers back from the real server:
+
+```
+Access-Control-Allow-Headers: content-type
+Access-Control-Allow-Methods: DELETE
+Access-Control-Allow-Origin: http://www.todobackend.com
+Connection: keep-alive
+Content-Length: 0
+Content-Type: text/plain;charset=utf-8
+Date: Sat, 09 Mar 2019 22:02:42 GMT
+Server: Javalin
+Via: 1.1 vegur
+```
+
+### Resulting body back from the real server (200: text/plain;charset=utf-8):
+
+```
+
+```
+
+## Interaction 9: OPTIONS /
+
+### Request headers sent to the real server:
+
+```
+Accept-Encoding: gzip, deflate, br
+Accept-Language: pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7
+Accept: */*
+Access-Control-Request-Headers: content-type
+Access-Control-Request-Method: POST
+Cache-Control: no-cache
+Connection: keep-alive
+Host: todo-javalin.herokuapp.com
+Origin: http://www.todobackend.com
+Pragma: no-cache
+Referer: http://www.todobackend.com/specs/index.html?http://todo-javalin.herokuapp.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36
+```
+
+### Body sent to the real server ():
+
+```
+
+```
+
+### Resulting headers back from the real server:
+
+```
+Access-Control-Allow-Headers: content-type
+Access-Control-Allow-Methods: POST
+Access-Control-Allow-Origin: http://www.todobackend.com
+Connection: keep-alive
+Content-Length: 0
+Content-Type: text/plain;charset=utf-8
+Date: Sat, 09 Mar 2019 22:02:42 GMT
+Server: Javalin
+Via: 1.1 vegur
+```
+
+### Resulting body back from the real server (200: text/plain;charset=utf-8):
+
+```
+
+```
+
+## Interaction 5: OPTIONS /
+
+### Request headers sent to the real server:
+
+```
+Accept-Encoding: gzip, deflate, br
+Accept-Language: pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7
+Accept: */*
+Access-Control-Request-Headers: content-type
+Access-Control-Request-Method: DELETE
+Cache-Control: no-cache
+Connection: keep-alive
+Host: todo-javalin.herokuapp.com
+Origin: http://www.todobackend.com
+Pragma: no-cache
+Referer: http://www.todobackend.com/specs/index.html?http://todo-javalin.herokuapp.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36
+```
+
+### Body sent to the real server ():
+
+```
+
+```
+
+### Resulting headers back from the real server:
+
+```
+Access-Control-Allow-Headers: content-type
+Access-Control-Allow-Methods: DELETE
+Access-Control-Allow-Origin: http://www.todobackend.com
+Connection: keep-alive
+Content-Length: 0
+Content-Type: text/plain;charset=utf-8
+Date: Sat, 09 Mar 2019 22:02:42 GMT
+Server: Javalin
+Via: 1.1 vegur
+```
+
+### Resulting body back from the real server (200: text/plain;charset=utf-8):
+
+```
+
+```
+
+## Interaction 4: OPTIONS /
+
+### Request headers sent to the real server:
+
+```
+Accept-Encoding: gzip, deflate, br
+Accept-Language: pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7
+Accept: */*
+Access-Control-Request-Headers: content-type
+Access-Control-Request-Method: DELETE
+Cache-Control: no-cache
+Connection: keep-alive
+Host: todo-javalin.herokuapp.com
+Origin: http://www.todobackend.com
+Pragma: no-cache
+Referer: http://www.todobackend.com/specs/index.html?http://todo-javalin.herokuapp.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36
+```
+
+### Body sent to the real server ():
+
+```
+
+```
+
+### Resulting headers back from the real server:
+
+```
+Access-Control-Allow-Headers: content-type
+Access-Control-Allow-Methods: DELETE
+Access-Control-Allow-Origin: http://www.todobackend.com
+Connection: keep-alive
+Content-Length: 0
+Content-Type: text/plain;charset=utf-8
+Date: Sat, 09 Mar 2019 22:02:42 GMT
+Server: Javalin
+Via: 1.1 vegur
+```
+
+### Resulting body back from the real server (200: text/plain;charset=utf-8):
+
+```
+
+```
+
+## Interaction 10: OPTIONS /
+
+### Request headers sent to the real server:
+
+```
+Accept-Encoding: gzip, deflate, br
+Accept-Language: pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7
+Accept: */*
+Access-Control-Request-Headers: content-type
+Access-Control-Request-Method: POST
+Cache-Control: no-cache
+Connection: keep-alive
+Host: todo-javalin.herokuapp.com
+Origin: http://www.todobackend.com
+Pragma: no-cache
+Referer: http://www.todobackend.com/specs/index.html?http://todo-javalin.herokuapp.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36
+```
+
+### Body sent to the real server ():
+
+```
+
+```
+
+### Resulting headers back from the real server:
+
+```
+Access-Control-Allow-Headers: content-type
+Access-Control-Allow-Methods: POST
+Access-Control-Allow-Origin: http://www.todobackend.com
+Connection: keep-alive
+Content-Length: 0
+Content-Type: text/plain;charset=utf-8
+Date: Sat, 09 Mar 2019 22:02:42 GMT
+Server: Javalin
+Via: 1.1 vegur
+```
+
+### Resulting body back from the real server (200: text/plain;charset=utf-8):
+
+```
+
+```
+
+## Interaction 6: OPTIONS /
+
+### Request headers sent to the real server:
+
+```
+Accept-Encoding: gzip, deflate, br
+Accept-Language: pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7
+Accept: */*
+Access-Control-Request-Headers: content-type
+Access-Control-Request-Method: DELETE
+Cache-Control: no-cache
+Connection: keep-alive
+Host: todo-javalin.herokuapp.com
+Origin: http://www.todobackend.com
+Pragma: no-cache
+Referer: http://www.todobackend.com/specs/index.html?http://todo-javalin.herokuapp.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36
+```
+
+### Body sent to the real server ():
+
+```
+
+```
+
+### Resulting headers back from the real server:
+
+```
+Access-Control-Allow-Headers: content-type
+Access-Control-Allow-Methods: DELETE
+Access-Control-Allow-Origin: http://www.todobackend.com
+Connection: keep-alive
+Content-Length: 0
+Content-Type: text/plain;charset=utf-8
+Date: Sat, 09 Mar 2019 22:02:42 GMT
+Server: Javalin
+Via: 1.1 vegur
+```
+
+### Resulting body back from the real server (200: text/plain;charset=utf-8):
+
+```
+
+```
+
+## Interaction 0: OPTIONS /
+
+### Request headers sent to the real server:
+
+```
+Accept-Encoding: gzip, deflate, br
+Accept-Language: pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7
+Accept: */*
+Access-Control-Request-Headers: content-type
+Access-Control-Request-Method: GET
+Cache-Control: no-cache
+Connection: keep-alive
+Host: todo-javalin.herokuapp.com
+Origin: http://www.todobackend.com
+Pragma: no-cache
+Referer: http://www.todobackend.com/specs/index.html?http://todo-javalin.herokuapp.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36
+```
+
+### Body sent to the real server ():
+
+```
+
+```
+
+### Resulting headers back from the real server:
+
+```
+Access-Control-Allow-Headers: content-type
+Access-Control-Allow-Methods: GET
+Access-Control-Allow-Origin: http://www.todobackend.com
+Connection: keep-alive
+Content-Length: 0
+Content-Type: text/plain;charset=utf-8
+Date: Sat, 09 Mar 2019 22:05:26 GMT
+Server: Javalin
+Via: 1.1 vegur
+```
+
+### Resulting body back from the real server (200: text/plain;charset=utf-8):
+
+```
+
+```
+
+## Interaction 1: OPTIONS /
+
+### Request headers sent to the real server:
+
+```
+Accept-Encoding: gzip, deflate, br
+Accept-Language: pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7
+Accept: */*
+Access-Control-Request-Headers: content-type
+Access-Control-Request-Method: POST
+Cache-Control: no-cache
+Connection: keep-alive
+Host: todo-javalin.herokuapp.com
+Origin: http://www.todobackend.com
+Pragma: no-cache
+Referer: http://www.todobackend.com/specs/index.html?http://todo-javalin.herokuapp.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36
+```
+
+### Body sent to the real server ():
+
+```
+
+```
+
+### Resulting headers back from the real server:
+
+```
+Access-Control-Allow-Headers: content-type
+Access-Control-Allow-Methods: POST
+Access-Control-Allow-Origin: http://www.todobackend.com
+Connection: keep-alive
+Content-Length: 0
+Content-Type: text/plain;charset=utf-8
+Date: Sat, 09 Mar 2019 22:05:26 GMT
+Server: Javalin
+Via: 1.1 vegur
+```
+
+### Resulting body back from the real server (200: text/plain;charset=utf-8):
+
+```
+
+```
+
