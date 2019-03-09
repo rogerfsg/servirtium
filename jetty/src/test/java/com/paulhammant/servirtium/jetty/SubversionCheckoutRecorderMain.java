@@ -49,8 +49,10 @@ import java.nio.file.Paths;
 
 public class SubversionCheckoutRecorderMain {
 
-    public static final String CHECKOUT_RECORDER_TEST_MD = "../core/src/test/resources/ExampleSubversionCheckoutRecording.md";
-
+    //TODO put inside configuration file
+    //TODO had to remove '..'
+    //public static final String CHECKOUT_RECORDER_TEST_MD = "/core/src/test/resources/ExampleSubversionCheckoutRecording.md";
+    public static final String CHECKOUT_RECORDER_TEST_MD = "C:/Jooby/Servirtium/core/src/test/resources/ExampleSubversionCheckoutRecording.md";
     public static void main(String[] args) throws Exception {
 
         // Run this main() method from within Intellij
@@ -62,14 +64,18 @@ public class SubversionCheckoutRecorderMain {
 
         String tempDir = new File(".").getAbsolutePath() + "/.servirtium_tmp/";
         createWorkDirAndDeleteCheckout(tempDir);
-
+        //Service monitor to output
         final ServiceMonitor.Console serverMonitor = new ServiceMonitor.Console();
+
+        //Highlight regex from log information
         MarkdownRecorder recorder = new MarkdownRecorder(
                 new ServiceInteropViaOkHttp(),
                 new SubversionInteractionManipulations("", ""));
-        ServirtiumServer servirtiumServer = new JettyServirtiumServer(serverMonitor,
+        ServirtiumServer servirtiumServer = new JettyServirtiumServer(
+                serverMonitor,
                 8099,
-                new SubversionInteractionManipulations("", ""), recorder);
+                new SubversionInteractionManipulations("", ""),
+                recorder);
 
         ByteArrayOutputStream out = new ByteArrayOutputStream();
         FileOutputStream fos = new FileOutputStream(CHECKOUT_RECORDER_TEST_MD);
@@ -78,13 +84,16 @@ public class SubversionCheckoutRecorderMain {
 
         Runtime.getRuntime().addShutdownHook(new Thread(servirtiumServer::stop));
 
-
     }
 
-    public static ServirtiumServer makeServirtiumServer(ServiceMonitor.Console serverMonitor, Interactor interactor) {
-        return new JettyServirtiumServer(serverMonitor,
+    public static ServirtiumServer makeServirtiumServer(
+            ServiceMonitor.Console serverMonitor, Interactor interactor) {
+
+        return new JettyServirtiumServer(
+                serverMonitor,
                 8099,
-                new SubversionInteractionManipulations("", ""), interactor);
+                new SubversionInteractionManipulations("", ""),
+                interactor);
     }
 
     public static void createWorkDirAndDeleteCheckout(String tempDir) throws IOException {
@@ -97,7 +106,5 @@ public class SubversionCheckoutRecorderMain {
         } catch (NoSuchFileException e) {
         }
     }
-
-
 
 }

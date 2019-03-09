@@ -26,9 +26,11 @@ public class JettyServirtiumServer extends ServirtiumServer {
     private Server jettyServer;
     boolean failed = false;
 
-    public JettyServirtiumServer(ServiceMonitor monitor, int port,
-                                 InteractionManipulations interactionManipulations,
-                                 Interactor interactor) {
+    public JettyServirtiumServer(
+            ServiceMonitor monitor,
+             int port,
+             InteractionManipulations interactionManipulations,
+             Interactor interactor) {
         super(interactionManipulations, interactor);
 
         jettyServer = new Server(port);
@@ -70,7 +72,8 @@ public class JettyServirtiumServer extends ServirtiumServer {
                 return;
             }
 
-            Interactor.Interaction interaction = interactor.newInteraction(method, uri, getInteractionNum(), url, getContext());
+            Interactor.Interaction interaction = interactor.newInteraction(
+                    method, uri, getInteractionNum(), url, getContext());
 
             monitor.interactionStarted(getInteractionNum(), interaction);
 
@@ -134,6 +137,8 @@ public class JettyServirtiumServer extends ServirtiumServer {
             monitor.unexpectedRequestError(throwable, getContext());
             throw throwable; // stick your debugger here
         } finally {
+            //shutdown e
+            interactor.flush(getInteractionNum(), failed);
             // Inform jetty that this request has now been handled
             baseRequest.setHandled(true);
         }

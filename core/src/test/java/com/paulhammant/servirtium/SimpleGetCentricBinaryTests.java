@@ -113,6 +113,7 @@ public abstract class SimpleGetCentricBinaryTests {
 
         ByteArrayOutputStream out = new ByteArrayOutputStream();
         recorder.setOutputStream("foo", out);
+
         servirtiumServer.start();
 
         checkGetOfLinuxBinaryLibFileOverHttpViaRestAssured();

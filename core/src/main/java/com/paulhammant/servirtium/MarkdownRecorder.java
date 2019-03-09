@@ -36,19 +36,19 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.OutputStream;
 import java.io.PrintStream;
-import java.util.Arrays;
-import java.util.Base64;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
+import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.ConcurrentLinkedQueue;
 
 public class MarkdownRecorder implements Interactor {
 
     private final ServiceInteroperation serviceInteroperation;
     private final InteractionManipulations interactionManipulations;
     private PrintStream out;
-    private Map<Integer, String> interactions = new HashMap<>();
-    private Map<String, String> redactions = new HashMap<>();
+    private String filename;
+
+    private Queue<String> interactions = new ConcurrentLinkedQueue<>();
+    private Map<String, String> redactions = new ConcurrentHashMap<>();
     private boolean alphaSortHeaders;
 
     public MarkdownRecorder(ServiceInteroperation serviceInteroperation,
@@ -215,7 +215,7 @@ public class MarkdownRecorder implements Interactor {
 
     @Override
     public void addInteraction(Interaction interaction) {
-        this.interactions.put(interaction.interactionNum, ((RecordingInteraction) interaction).recording.toString());
+        this.interactions.add(((RecordingInteraction) interaction).recording.toString());
     }
 
     @Override
@@ -235,27 +235,36 @@ public class MarkdownRecorder implements Interactor {
         }
     }
 
+    public synchronized void flush(int interactionNum, boolean failed) throws FileNotFoundException {
+        if(this.out != null){
+            finishedScript(interactionNum, failed);
+            setScriptFilename(filename);
+        }
+    }
+
     public void finishedScript(int interactionNum, boolean failed) {
         if (this.out != null) {
-            int i = 0;
             while (this.interactions.size() >0) {
-                this.out.print(this.interactions.remove(i++));
+                this.out.print(this.interactions.remove());
             }
             if (failed) {
                 this.out.println("# Failure noted during recording.\n\nMeaning this recording may be shorter than intended. " +
                         "That all depends on how the test was coded though.");
             }
+            //windows is not printin
+            this.out.flush();
             this.out.close();
             this.out = null;
         }
     }
 
     public void setScriptFilename(String filename) throws FileNotFoundException {
-        setOutputStream(filename, new FileOutputStream(filename));
+        setOutputStream(filename, new FileOutputStream(filename, true));
     }
 
     public void setOutputStream(String filename, OutputStream out) {
         if (out != null) {
+            this.filename=filename;
             this.out = new PrintStream(out);
         }
     }

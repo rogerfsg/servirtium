@@ -374,7 +374,7 @@ public abstract class SimplePostCentricTests {
 
     public static void main(String[] args) throws IOException {
 
-        InputStream inputStream = new FileInputStream("../core/src/test/resources/png-transparent.png");
+        InputStream inputStream = new FileInputStream("core/src/test/resources/png-transparent.png");
         byte[] foo = new byte[inputStream.available()];
         inputStream.read(foo);
 

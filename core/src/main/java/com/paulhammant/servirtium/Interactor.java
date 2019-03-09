@@ -37,6 +37,8 @@ import java.util.List;
 
 public interface Interactor {
 
+    void flush(int interactionNum, boolean failed) throws FileNotFoundException;
+
     void finishedScript(int interactionNum, boolean failed);
 
     void setScriptFilename(String filename) throws FileNotFoundException;
@@ -71,6 +73,11 @@ public interface Interactor {
     }
 
     public class NullObject implements Interactor {
+        @Override
+        public void flush(int interactionNum, boolean failed) {
+
+        }
+
         @Override
         public void finishedScript(int interactionNum, boolean failed) {
         }

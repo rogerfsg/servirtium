@@ -82,6 +82,8 @@ public class ServiceInteropViaOkHttp implements ServiceInteroperation {
             Headers.Builder hb = new Headers.Builder();
 
             for (String h : clientRequestHeaders) {
+                //preventing illegalArgumentException, it's happening in some cases
+                if(h == null || h.length() == 0 ) continue;
                 hb.add(h);
             }
 
@@ -128,6 +130,8 @@ public class ServiceInteropViaOkHttp implements ServiceInteroperation {
 
         } catch (IOException e) {
             throw new InteractionException(e);
+        } catch(IllegalArgumentException e2) {
+            throw e2;
         }
     }
 

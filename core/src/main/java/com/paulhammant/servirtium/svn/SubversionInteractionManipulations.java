@@ -56,7 +56,7 @@ public class SubversionInteractionManipulations extends SimpleInteractionManipul
 
         super.changeSingleHeaderForRequestToService(method, currentHeader, clientRequestHeaders);
     }
-
+    //TODO validate if does not has to be different on windows
     protected String getUserAgentString() {
         return "SVN/1.10.0 (x86_64-apple-darwin17.0.0) serf/1.3.9";
     }

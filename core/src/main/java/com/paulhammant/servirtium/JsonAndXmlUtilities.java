@@ -39,6 +39,8 @@ public class JsonAndXmlUtilities extends BaseMatcher<String> {
     }
 
     public static String prettifyDocOrNot(String doc) {
+        //prevating Outbond index exception
+        if(doc.length() == 0 ) return doc;
         char firstNonBlankChar = doc.trim().charAt(0);
         if (firstNonBlankChar == '{' || firstNonBlankChar == '[') {
             try {

@@ -40,20 +40,26 @@ public class TodobackendDotComRecorderMain {
 
         ServirtiumServer servirtiumServer = makeServirtiumServer(manipulations, recorder);
 
-        recorder.setScriptFilename("core/src/test/resources/TodobackendDotComServiceRecording.md");
+        //recorder.setScriptFilename("core/src/test/resources/TodobackendDotComServiceRecording.md");
+        recorder.setScriptFilename("C:\\Jooby\\Servirtium\\core\\src\\test\\resources\\TodobackendDotComServiceRecording.md");
         servirtiumServer.start();
 
         Runtime.getRuntime().addShutdownHook(new Thread(servirtiumServer::stop));
     }
 
     public static ServirtiumServer makeServirtiumServer(SimpleInteractionManipulations manipulations, Interactor interactor) {
-        return new JettyServirtiumServer(new ServiceMonitor.Console(), 8099,
-                manipulations, interactor)
+        return new JettyServirtiumServer(
+                new ServiceMonitor.Console(),
+                    8099,
+                    manipulations,
+                    interactor)
                 .withPrettyPrintedTextBodies();
     }
 
     public static SimpleInteractionManipulations makeInteractionManipulations() {
-        return new SimpleInteractionManipulations("localhost:8099", "todo-backend-sinatra.herokuapp.com") {
+        //todo-javalin.herokuapp.com/
+        //todo-backend-sinatra.herokuapp.com
+        return new SimpleInteractionManipulations("localhost:8099", "todo-javalin.herokuapp.com") {
             @Override
             public void changeAnyHeadersForRequestToService(List<String> clientRequestHeaders) {
                 String refer = "";
@@ -73,7 +79,8 @@ public class TodobackendDotComRecorderMain {
 
             @Override
             public String changeBodyReturnedBackFromServiceForClient(String body) {
-                return body.replaceAll("todo-backend-sinatra\\.herokuapp\\.com",
+
+                return body.replaceAll("todo-javalin\\.herokuapp\\.com",
                         "localhost:8099");
             }
         };

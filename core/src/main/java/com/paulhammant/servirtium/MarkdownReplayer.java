@@ -30,6 +30,8 @@
 */
 package com.paulhammant.servirtium;
 
+import sun.reflect.generics.reflectiveObjects.NotImplementedException;
+
 import java.io.IOException;
 import java.nio.file.Paths;
 import java.util.ArrayList;
@@ -69,7 +71,13 @@ public class MarkdownReplayer implements Interactor {
 
     public void setScriptFilename(String filename) {
         try {
-            setPlaybackConversation(new String(readAllBytes(Paths.get(filename))));
+            //String current = new java.io.File( "." ).getCanonicalPath();
+            //TODO remove
+            String path = "C:\\Jooby\\Servirtium\\core\\src\\test\\resources\\ExampleSubversionCheckoutRecording.md";
+            //TODO come back
+            //setPlaybackConversation(new String(readAllBytes(Paths.get(filename))));
+            //TODO remove
+            setPlaybackConversation(new String(readAllBytes(Paths.get(path))));
             this.filename = filename;
         } catch (IOException e) {
             throw new UnsupportedOperationException();
@@ -95,6 +103,11 @@ public class MarkdownReplayer implements Interactor {
                 ctr++;
             }
         }
+    }
+
+    @Override
+    public void flush(int interactionNum, boolean failed) {
+        throw new NotImplementedException();
     }
 
     @Override
