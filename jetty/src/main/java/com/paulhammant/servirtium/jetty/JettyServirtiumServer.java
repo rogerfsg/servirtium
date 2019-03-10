@@ -118,10 +118,15 @@ public class JettyServirtiumServer extends ServirtiumServer {
                 response.setContentType(serverResponse.contentType);
             }
 
+
             if (serverResponse.body instanceof String) {
-                response.getWriter().write((String) serverResponse.body);
+                String strBody = (String) serverResponse.body;
+                response.setContentLength(strBody.length());
+                response.getWriter().write(strBody);
             } else {
-                response.getOutputStream().write((byte[]) serverResponse.body);
+                 byte[] bs=(byte[]) serverResponse.body;
+                response.setContentLength(bs.length);
+                response.getOutputStream().write(bs);
             }
 
             monitor.interactionFinished(getInteractionNum(), method, url, getContext());
