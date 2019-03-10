@@ -24,7 +24,7 @@ import static com.paulhammant.servirtium.JsonAndXmlUtilities.prettifyDocOrNot;
 public class JettyServirtiumServer extends ServirtiumServer {
 
     private Server jettyServer;
-    boolean failed = false;
+    private boolean lastCallFailed;
 
     public JettyServirtiumServer(
             ServiceMonitor monitor,
@@ -49,7 +49,8 @@ public class JettyServirtiumServer extends ServirtiumServer {
 
     private void handleExchange(Request baseRequest, HttpServletRequest request, HttpServletResponse response,
                                 ServiceMonitor monitor) throws IOException {
-
+        //always renew failed, so became local
+        boolean failed = false;
         bumpInteractionNum();
 
         String method = request.getMethod();
@@ -96,7 +97,8 @@ public class JettyServirtiumServer extends ServirtiumServer {
                     interaction, clientRequestContentType, interactionManipulations);
 
             // INTERACTION
-            ServiceResponse serverResponse = interactor.getServiceResponseForRequest(method, requestUrl, clientRequestHeaders,
+            ServiceResponse serverResponse = interactor.getServiceResponseForRequest(
+                    method, requestUrl, clientRequestHeaders,
                     interaction, getLowerCaseHeaders());
 
             serverResponse = processHeadersAndBodyBackFromService(interaction, serverResponse, interactionManipulations);
@@ -139,6 +141,7 @@ public class JettyServirtiumServer extends ServirtiumServer {
         } finally {
             //shutdown e
             interactor.flush(getInteractionNum(), failed);
+            lastCallFailed = failed;
             // Inform jetty that this request has now been handled
             baseRequest.setHandled(true);
         }
@@ -170,7 +173,10 @@ public class JettyServirtiumServer extends ServirtiumServer {
                     ArrayList<String> tmp = new ArrayList<>();
                     for (String header : newHeaders) {
                         if (header.startsWith("Content-Length")) {
-                            tmp.add("Content-Length: " + body.length());
+                            if(body.length() > 0)
+                                tmp.add("Content-Length: " + body.length());
+                            else
+                                tmp.add(header);
                         } else {
                             tmp.add(header);
                         }
@@ -258,7 +264,7 @@ public class JettyServirtiumServer extends ServirtiumServer {
 
     public void stop() {
         try {
-            interactor.finishedScript(getInteractionNum(), failed); // just in case
+            interactor.finishedScript(getInteractionNum(), lastCallFailed); // just in case
         } finally {
             try {
                 jettyServer.setStopTimeout(1);
@@ -270,7 +276,7 @@ public class JettyServirtiumServer extends ServirtiumServer {
     }
 
     public void finishedScript() {
-        interactor.finishedScript(getInteractionNum(), failed);
+        interactor.finishedScript(getInteractionNum(), lastCallFailed);
     }
 
     public static void disableJettyLogging() {

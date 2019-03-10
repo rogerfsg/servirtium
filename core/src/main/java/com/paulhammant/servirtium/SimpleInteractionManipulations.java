@@ -14,6 +14,7 @@ public class SimpleInteractionManipulations implements InteractionManipulations 
     private String[] headerPrefixesToRemoveFromRequest = new String[0];
     private String[] headerPrefixesToRemoveFromResponse = new String[0];
 
+
     public SimpleInteractionManipulations() {
         this("xx8suf98su98sf98sjxjcvlkxjcv" , "s89s8798s7df98sdf98sdf98sdf9");
     }
@@ -33,6 +34,7 @@ public class SimpleInteractionManipulations implements InteractionManipulations 
         this.headerPrefixesToRemoveFromRequest = headerPrefixesToRemove;
         return this;
     }
+
 
     @Override
     public String changeUrlForRequestToService(String url) {
@@ -57,6 +59,7 @@ public class SimpleInteractionManipulations implements InteractionManipulations 
             }
         }
 
+
         if (currentHeader.startsWith("Host: ") || currentHeader.startsWith("host: ")) {
             for (int i = 0; i < clientRequestHeaders.size(); i++) {
                 String h = clientRequestHeaders.get(i);
@@ -80,6 +83,8 @@ public class SimpleInteractionManipulations implements InteractionManipulations 
                 }
             }
         }
+        //serverResponseHeaders.add("Access-Control-Allow-Origin: *");
+        //serverResponseHeaders.add("Access-Control-Allow-Headers: *");
     }
 
 }
