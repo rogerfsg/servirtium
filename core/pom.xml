@@ -72,6 +72,11 @@
             <version>9.4.15.v20190215</version>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>org.mortbay.jetty</groupId>
+            <artifactId>jetty-ssl</artifactId>
+            <version>7.0.0.pre5</version>
+        </dependency>
 
     </dependencies>
 

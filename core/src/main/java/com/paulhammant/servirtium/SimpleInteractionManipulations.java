@@ -84,7 +84,7 @@ public class SimpleInteractionManipulations implements InteractionManipulations 
             }
         }
         //serverResponseHeaders.add("Access-Control-Allow-Origin: *");
-        //serverResponseHeaders.add("Access-Control-Allow-Headers: *");
+        serverResponseHeaders.add("Access-Control-Allow-Headers: Content-Type");
     }
 
 }

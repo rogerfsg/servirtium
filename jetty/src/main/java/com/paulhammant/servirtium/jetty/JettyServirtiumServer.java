@@ -118,7 +118,6 @@ public class JettyServirtiumServer extends ServirtiumServer {
                 response.setContentType(serverResponse.contentType);
             }
 
-
             if (serverResponse.body instanceof String) {
                 String strBody = (String) serverResponse.body;
                 response.setContentLength(strBody.length());
