@@ -85,16 +85,16 @@ public class SubversionCheckoutRecorderMain {
         Runtime.getRuntime().addShutdownHook(new Thread(servirtiumServer::stop));
 
     }
-
-    public static ServirtiumServer makeServirtiumServer(
-            ServiceMonitor.Console serverMonitor, Interactor interactor) {
-
-        return new JettyServirtiumServer(
-                serverMonitor,
-                8099,
-                new SubversionInteractionManipulations("", ""),
-                interactor);
-    }
+//
+//    public static ServirtiumServer makeServirtiumServer(
+//            ServiceMonitor.Console serverMonitor, Interactor interactor) {
+//
+//        return new JettyServirtiumServer(
+//                serverMonitor,
+//                8099,
+//                new SubversionInteractionManipulations("", ""),
+//                interactor);
+//    }
 
     public static void createWorkDirAndDeleteCheckout(String tempDir) throws IOException {
         new File(tempDir).mkdirs();

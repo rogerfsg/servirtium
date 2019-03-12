@@ -11,7 +11,7 @@ import org.junit.Test;
 
 public class SimpleGetCentricTextWithJettyTests extends SimpleGetCentricTextTests {
 
-    public ServirtiumServer makeServirtiumServer(ServiceMonitor.Console serverMonitor, SimpleInteractionManipulations interactionManipulations, Interactor interactor) {
+    public ServirtiumServer makeServirtiumServer(ServiceMonitor.Console serverMonitor, SimpleInteractionManipulations interactionManipulations, Interactor interactor) throws Exception {
         return new JettyServirtiumServer(serverMonitor,
                 8080, interactionManipulations, interactor);
     }

@@ -47,10 +47,10 @@ public class TodobackendDotComRecorderMain {
         Runtime.getRuntime().addShutdownHook(new Thread(servirtiumServer::stop));
     }
 
-    public static ServirtiumServer makeServirtiumServer(SimpleInteractionManipulations manipulations, Interactor interactor) {
+    public static ServirtiumServer makeServirtiumServer(SimpleInteractionManipulations manipulations, Interactor interactor) throws Exception {
         return new JettyServirtiumServer(
                 new ServiceMonitor.Console(),
-                    8099,
+                    8443,
                     manipulations,
                     interactor)
                 .withPrettyPrintedTextBodies();

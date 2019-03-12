@@ -5,10 +5,15 @@ import com.paulhammant.servirtium.Interactor;
 import com.paulhammant.servirtium.ServiceMonitor;
 import com.paulhammant.servirtium.ServiceResponse;
 import com.paulhammant.servirtium.ServirtiumServer;
-import org.eclipse.jetty.server.Request;
-import org.eclipse.jetty.server.Server;
+import org.eclipse.jetty.server.*;
 import org.eclipse.jetty.server.handler.AbstractHandler;
+import org.eclipse.jetty.server.handler.HandlerCollection;
+import org.eclipse.jetty.server.handler.RequestLogHandler;
 import org.eclipse.jetty.util.log.Logger;
+import org.eclipse.jetty.util.resource.Resource;
+import org.eclipse.jetty.util.ssl.SslContextFactory;
+import org.eclipse.jetty.xml.XmlConfiguration;
+import org.xml.sax.SAXException;
 
 import javax.servlet.ServletInputStream;
 import javax.servlet.http.HttpServletRequest;
@@ -30,10 +35,65 @@ public class JettyServirtiumServer extends ServirtiumServer {
             ServiceMonitor monitor,
              int port,
              InteractionManipulations interactionManipulations,
-             Interactor interactor) {
+             Interactor interactor) throws Exception {
         super(interactionManipulations, interactor);
+//https://stackoverflow.com/questions/23267639/location-of-jetty-xml-in-a-maven-project
+        //http://juplo.de/configure-https-for-jetty-maven-plugin-9-0-x/
+//        https://www.javatips.net/api/org.eclipse.jetty.server.sslconnectionfactory
 
-        jettyServer = new Server(port);
+//        Resource jetty = Resource.newSystemResource("jetty.xml");
+//        Resource jettySsl = Resource.newSystemResource("jetty-ssl.xml");
+//        Resource jettyHttps = Resource.newSystemResource("jetty-https.xml");
+//        Resource jettyServerHttp = Resource.newSystemResource("jetty-http.xml");
+
+        //mostly copied from http://www.eclipse.org/jetty/documentation/current/embedding-jetty.html
+        // === jetty.xml ===
+
+        // Server
+        this.jettyServer= new Server();
+        // Extra options
+        //server.setDumpAfterStart(true);
+        //server.setDumpBeforeStop(true);
+        //jettyServer.setStopAtShutdown(true);
+
+
+
+        // === jetty-https.xml ===
+        // SSL Context Factory
+        SslContextFactory sslContextFactory = new SslContextFactory();
+        sslContextFactory.setKeyStoreResource(Resource.newSystemResource("jetty.keystore"));
+        sslContextFactory.setTrustStoreResource(Resource.newSystemResource("jetty.keystore"));
+        sslContextFactory.setKeyStorePassword("secret");
+        sslContextFactory.setKeyManagerPassword("secret");
+        sslContextFactory.setTrustStorePassword("secret");
+
+//        sslContextFactory.setEndpointIdentificationAlgorithm("");
+//                sslContextFactory.setExcludeCipherSuites(
+//                        "SSL_RSA_WITH_DES_CBC_SHA",
+//                        "SSL_DHE_RSA_WITH_DES_CBC_SHA",
+//                        "SSL_DHE_DSS_WITH_DES_CBC_SHA",
+//                        "SSL_RSA_EXPORT_WITH_RC4_40_MD5",
+//                        "SSL_RSA_EXPORT_WITH_DES40_CBC_SHA",
+//                        "SSL_DHE_RSA_EXPORT_WITH_DES40_CBC_SHA",
+//                        "SSL_DHE_DSS_EXPORT_WITH_DES40_CBC_SHA");
+        // SSL HTTP Configuration
+        HttpConfiguration https_config = new HttpConfiguration();
+        https_config.setSecureScheme("https");
+        https_config.setSecurePort(port);
+        https_config.setOutputBufferSize(32768);
+        https_config.setRequestHeaderSize(8192);
+        https_config.setResponseHeaderSize(8192);
+        https_config.setSendServerVersion(true);
+        https_config.setSendDateHeader(false);
+        https_config.addCustomizer(new SecureRequestCustomizer());
+        // SSL Connector
+        ServerConnector sslConnector = new ServerConnector(jettyServer, new SslConnectionFactory(sslContextFactory, "http/1.1"), new HttpConnectionFactory(https_config));
+        sslConnector.setPort(port);
+        jettyServer.setConnectors(new Connector[] { sslConnector });
+
+
+        //createConnector(jettyServer);
+
         // How the f*** do you turn off Embedded Jetty's logging???
         // Everything I tried (mostly static operations on Log) didn't work.
 
@@ -46,6 +106,16 @@ public class JettyServirtiumServer extends ServirtiumServer {
             }
         });
     }
+    @SuppressWarnings("squid:S2095")
+    private ServerConnector createConnector(final Server server) {
+        final SslContextFactory sslContextFactory = new SslContextFactory();
+
+        return new ServerConnector(server,
+                new SslConnectionFactory(sslContextFactory, "http/1.1"),
+                new HttpConnectionFactory());
+    }
+
+
 
     private void handleExchange(Request baseRequest, HttpServletRequest request, HttpServletResponse response,
                                 ServiceMonitor monitor) throws IOException {

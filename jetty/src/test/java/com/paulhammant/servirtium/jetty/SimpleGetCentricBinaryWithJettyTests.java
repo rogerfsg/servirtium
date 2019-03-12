@@ -10,7 +10,7 @@ import org.junit.Test;
 
 public class SimpleGetCentricBinaryWithJettyTests extends SimpleGetCentricBinaryTests {
 
-    protected ServirtiumServer makeServirtiumServer(SimpleInteractionManipulations interactionManipulations, Interactor interactor) {
+    protected ServirtiumServer makeServirtiumServer(SimpleInteractionManipulations interactionManipulations, Interactor interactor) throws Exception {
         return new JettyServirtiumServer(new ServiceMonitor.Console(),
                 8080, interactionManipulations, interactor);
     }

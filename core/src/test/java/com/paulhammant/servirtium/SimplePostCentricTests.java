@@ -126,7 +126,7 @@ public abstract class SimplePostCentricTests {
 
     }
 
-    public abstract ServirtiumServer makeServirtiumServer(SimpleInteractionManipulations interactionManipulations, Interactor interactor);
+    public abstract ServirtiumServer makeServirtiumServer(SimpleInteractionManipulations interactionManipulations, Interactor interactor) throws Exception;
 
     public void canReplayASimplePostToPostmanEcho() throws Exception {
 

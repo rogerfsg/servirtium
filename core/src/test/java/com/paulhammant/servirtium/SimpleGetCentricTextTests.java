@@ -355,7 +355,7 @@ public abstract class SimpleGetCentricTextTests {
 
     }
 
-    public abstract ServirtiumServer makeServirtiumServer(ServiceMonitor.Console serverMonitor, SimpleInteractionManipulations interactionManipulations, Interactor interactor);
+    public abstract ServirtiumServer makeServirtiumServer(ServiceMonitor.Console serverMonitor, SimpleInteractionManipulations interactionManipulations, Interactor interactor) throws Exception;
 
     public void canRecordASimpleGetOfARedditJsonDocumentAndPrettify() throws Exception {
 
