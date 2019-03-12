@@ -61,11 +61,12 @@ public class JettyServirtiumServer extends ServirtiumServer {
         // === jetty-https.xml ===
         // SSL Context Factory
         SslContextFactory sslContextFactory = new SslContextFactory();
-        sslContextFactory.setKeyStoreResource(Resource.newSystemResource("jetty.keystore"));
+        //sslContextFactory.setKeyStoreResource(Resource.newSystemResource("cacert"));
         sslContextFactory.setTrustStoreResource(Resource.newSystemResource("jetty.keystore"));
         sslContextFactory.setKeyStorePassword("secret");
         sslContextFactory.setKeyManagerPassword("secret");
-        sslContextFactory.setTrustStorePassword("secret");
+        sslContextFactory.setIncludeCipherSuites();
+//        sslContextFactory.setTrustStorePassword("secret");
 
 //        sslContextFactory.setEndpointIdentificationAlgorithm("");
 //                sslContextFactory.setExcludeCipherSuites(
